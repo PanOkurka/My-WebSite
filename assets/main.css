@@ -3,7 +3,8 @@ html,body{
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    scroll-behavior: smooth;
+    
 }
 #particles-js{
     height: 100%;
@@ -124,4 +125,88 @@ a{
     50%{ background-color: transparent;}
     99%{ background-color: transparent;}
     100%{ background-color: white; }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: green;
+  }
+
+
+.bio {
+    background-color: #262626;
+}
+
+
+.footer {
+    background-color: #1d1d1e;
+    padding: 50px 0;
+}
+
+.footer .item.text{
+    margin-bottom: 36px;
+}
+
+.footer .item.social{
+    text-align: center;
+}
+
+.footer .item.social > a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+  }
+
+.footer .item.social > a:hover {
+    background-color: #474350;
+  }
+
+.footer .copyright{
+    text-align: center;
+    padding-top: 24px;
+    font-family: consolas;
+    font-size: 20px;
+    color: white;
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-container{
+    width: 50%;
+    padding: 10px;
+    margin: 0;
+}
+
+.box-container h1 {
+    padding-top: 20px;
+    font-family: consolas;
+    color: green;
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-left: -20px;
+}
+
+.box-container p {
+    font-family: consolas;
+    color: white;
+    font-size: 20px;
 }
