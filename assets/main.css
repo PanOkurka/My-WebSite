@@ -210,3 +210,13 @@ a{
     color: white;
     font-size: 20px;
 }
+
+.projekts{
+    color: rgb(231, 162, 13);
+    font-size: 20px;
+    font-family: consolas;
+} 
+.projekts:hover {
+    color: rgb(231, 162, 13);
+    text-decoration: none;
+}
