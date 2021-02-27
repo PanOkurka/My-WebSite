@@ -166,7 +166,6 @@ a{
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
     margin: 0 8px;
     color: #fff;
     opacity: 0.75;
@@ -231,4 +230,158 @@ a{
     color: #7c7c7c;
     opacity: 0.75;
     position: absolute;
+}
+
+.box-container .skilstext{
+    color: rgb(231, 162, 13); 
+    font-size: 25px;
+}
+
+.box-container .skills-number1{
+    padding-left:90%;
+}
+.box-container .skills-number2{
+    padding-left:88%;
+}
+.box-container .skills-number3{
+    padding-left:84%;
+}
+.box-container .skills-number4{
+    padding-left:68%;
+}
+
+@media only screen and (max-width:700px) {
+    html {
+        overflow-x: hidden;
+    }
+    #particles-js{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .footer .item.social > a {
+        font-size: 28px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 8px;
+        color: #fff;
+        opacity: 0.75;
+      }
+    
+    .footer .copyright{
+        padding-top: 24px;
+        font-size: 20px;
+    }
+
+
+    .box-container{
+        width: 80%;
+        padding: 10px;
+        margin: 0;
+    }
+    
+    .box-container h1 {
+        padding-top: 15px;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    
+    .box-container p {
+        font-size: 15px;
+    }
+    
+    .projekts{
+        font-size: 15px;
+    } 
+    .box-container .skilstext{
+        font-size: 18px;
+    }
+
+    .box-container .skills-number1{
+        padding-left:80%;
+    }
+    .box-container .skills-number2{
+        padding-left:78%;
+    }
+    .box-container .skills-number3{
+        padding-left:64%;
+    }
+    .box-container .skills-number4{
+        padding-left:20%;
+    }
+
+    .back {
+        font-size: 15px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+
+
+    .center-name {
+        margin-top: -40px;
+        margin-left: 0px;
+        font-family: consolas;
+        font-size: 30px;
+    }
+    .cursor{
+        display: inline-block;
+        width: 2px;
+        margin-left: 0.1rem;
+        animation: blink 1s infinite;
+    }
+
+    .center-info {
+        margin-left: 0px;
+        margin-top: 80px;
+        font-size: 25px;
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        margin-left: 0px;
+        margin-top: -150px;
+    }
+
+    a{
+        font-size: 35px;
+    }
+
+    .social-link {
+        display: inline-block;
+        text-align: center;
+        line-height: 65px;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        position: absolute;
+        transition: all 0.3s ease-in-out; }
+
+
+        .social-link .instagram{
+            margin-left: -160px;
+            margin-top: 150px;
+        }
+        
+        .social-link .twitter{
+            margin-left: -75px;
+            margin-top: 150px;
+        }
+        
+        .social-link .discord{
+            margin-left: 15px;
+            margin-top: 150px;
+        }
+        
+        .social-link .youtube{
+            margin-left: 100px;
+            margin-top: 150px;
+        }
 }
