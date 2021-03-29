@@ -247,6 +247,10 @@ a{
     padding-left:84%;
 }
 .box-container .skills-number4{
+    padding-left:78%;
+}
+
+.box-container .skills-number5{
     padding-left:68%;
 }
 
@@ -312,7 +316,11 @@ a{
         padding-left:64%;
     }
     .box-container .skills-number4{
-        padding-left:20%;
+        padding-left:35%;
+    }
+
+    .box-container .skills-number5{
+        padding-left:3%;
     }
 
     .back {
