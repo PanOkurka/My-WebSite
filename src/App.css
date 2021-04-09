@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: consolas;
+}
+
+body {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2C2F33;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7289DA;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 250ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+@media screen and (max-width: 820px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  html, body {
+    overflow-y: scroll;
+  }
+}

@@ -1,0 +1,134 @@
+.REACTJS {
+    width: 25%;
+    height: 44px;
+    font-size:20px; 
+    padding-top: 6px;
+    background-image: linear-gradient(to right, #3236a8, #5b32a8, #7208cf); 
+}
+
+.HTML{
+    width:80%;
+    height:44px;
+    font-size:20px; 
+    padding-top: 6px;
+    background-image: linear-gradient(to right, #1cd308, #00a34f, #02c292);
+}
+
+.PHP{
+    width:35%;
+    height:44px;
+    font-size:20px; 
+    padding-top: 6px;
+    background-image: linear-gradient(to right, #bf0270, #bf022b, #bf0202);
+}
+
+.NODEJS{
+    width:75%;
+    height:44px;
+    font-size:20px; 
+    padding-top: 6px;
+    background-image: linear-gradient(to right, #bf3304, #bf8506, #ced902);
+}
+
+.StyleMake{
+    width:50%;
+    height:44px;
+    font-size:20px; 
+    padding-top: 6px;
+    background-image: linear-gradient(to right, #00c9af, #0274bf, #0218bf);
+}
+
+.info2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    width: 100%;
+    top: 30%;
+}
+
+.langs-container{
+    padding-left: 50px;
+    width: 50%;
+    margin: 0;
+    position: absolute;
+}
+
+.langs-container-3{
+    width: 95%;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 0;
+    position: absolute;
+}
+
+.langs-container .skilstext{
+    color: rgb(231, 162, 13); 
+    font-size: 25px;
+}
+
+.langs-container .skills-number1{
+    padding-left:90%;
+}
+.langs-container .skills-number2{
+    padding-left:88%;
+}
+.langs-container .skills-number3{
+    padding-left:84%;
+}
+.langs-container .skills-number4{
+    padding-left:78%;
+}
+
+.langs-container .skills-number5{
+    padding-left:68%;
+}
+
+.langs-container h1 {
+    padding-top: 20px;
+    font-family: consolas;
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-left: -20px;
+}
+
+.praticlesjs{
+    position: absolute;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+    .info2 {
+        top: 15%;
+    }
+
+    .langs-container{
+        width: 95%;
+    }
+
+    .langs-container-3{
+        width: 98%;
+        padding-left: 0px;
+    }
+
+    .langs-container .skilstext {
+        font-size: 20px;
+    }
+
+    .langs-container .skills-number1{
+        padding-left:88%;
+    }
+    .langs-container .skills-number2{
+        padding-left:86%;
+    }
+    .langs-container .skills-number3{
+        padding-left:80%;
+    }
+    .langs-container .skills-number4{
+        padding-left:70%;
+    }
+    
+    .langs-container .skills-number5{
+        padding-left:50%;
+    }
+}
