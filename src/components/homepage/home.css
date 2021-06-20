@@ -4,6 +4,7 @@
 
 html, body{
     background: #2C2F33;
+    overflow: hidden;
 }
 
 .particlesjs {
@@ -82,6 +83,10 @@ html, body{
 }
 
 @media only screen and (max-width: 900px){
+
+    html,body {
+        overflow: scroll;
+    }
 
     .centerMain{
         top: 20%;

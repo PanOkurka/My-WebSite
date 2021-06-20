@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route, withRouter } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import Navbar from './components/navbar/navbar'
 import Home from './components/homepage/home';
@@ -8,9 +8,21 @@ import Langs from './components/langspage/Langs';
 import Projects from './components/projektspage/Projects';
 
 function App() {
+
+  const MainNavBar = withRouter(({ location }) => {
+    return (
+      <div>
+        {
+        location.pathname!=='/LoginPage' ? <Navbar /> : null
+        }
+      </div>
+    )
+  })
+
+
   return (
     <BrowserRouter>
-      <Navbar />
+      <MainNavBar />
         <Route render={({location}) => (
           <TransitionGroup>
             <CSSTransition
@@ -19,9 +31,9 @@ function App() {
               classNames='fade'>
                 <Switch className='page'>
                   <Route exact path='/' component={Home} />
-                  <Route exact path='/bio' component={Info} />
-                  <Route exact path='/info' component={Langs} />
-                  <Route exact path='/projects' component={Projects}/>
+                  <Route  path='/bio' component={Info} />
+                  <Route  path='/info' component={Langs} />
+                  <Route  path='/projects' component={Projects}/>
                 </Switch>
             </CSSTransition>
           </TransitionGroup>
