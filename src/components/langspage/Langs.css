@@ -1,5 +1,5 @@
 .REACTJS {
-    width: 25%;
+    width: 55%;
     height: 44px;
     font-size:20px; 
     padding-top: 6px;
@@ -31,7 +31,7 @@
 }
 
 .StyleMake{
-    width:50%;
+    width:60%;
     height:44px;
     font-size:20px; 
     padding-top: 6px;
@@ -68,20 +68,20 @@
 }
 
 .langs-container .skills-number1{
-    padding-left:90%;
+    padding-left:91%;
 }
 .langs-container .skills-number2{
-    padding-left:88%;
+    padding-left:92%;
 }
 .langs-container .skills-number3{
-    padding-left:84%;
+    padding-left:89%;
 }
 .langs-container .skills-number4{
     padding-left:78%;
 }
 
 .langs-container .skills-number5{
-    padding-left:68%;
+    padding-left:88%;
 }
 
 .langs-container h1 {
