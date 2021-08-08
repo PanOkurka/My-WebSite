@@ -55,20 +55,21 @@ function Projects() {
                         </Card.Body>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src="AtropolWaitSite.png" />
+                        <Card.Img variant="top" src="AtropolHostingStatus.png" />
                         <Card.Body>
-                        <Card.Title>Atropol Web</Card.Title>
+                        <Card.Title>Atropol StatusPage</Card.Title>
                         <Card.Text>
-                            Old wait site for Atropol
+                            A Status website for Atropol Hosting!<br/><br/>
+                            <a href='https://status.atropol.net' className='FixedTest' target='_self'>Link Here</a>
                         </Card.Text>
                         </Card.Body>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src="PrejviSite.png" />
+                        <Card.Img variant="top" src="IPWare.png" />
                         <Card.Body>
-                        <Card.Title>Prejvi site</Card.Title>
+                        <Card.Title>IPWare site</Card.Title>
                         <Card.Text>
-                            Rn in development
+                            A React app site with server rendering.<br/><br/><a href='https://ipware.eu' className="FixedTest" target="_self">Link</a>
                         </Card.Text>
                         </Card.Body>
                     </Card>
