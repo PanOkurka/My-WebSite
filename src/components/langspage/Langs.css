@@ -1,9 +1,17 @@
 .REACTJS {
-    width: 55%;
+    width: 65%;
     height: 44px;
     font-size:20px; 
     padding-top: 6px;
     background-image: linear-gradient(to right, #3236a8, #5b32a8, #7208cf); 
+}
+
+.Dockerfile {
+    width: 40%;
+    height: 44px;
+    font-size:20px; 
+    padding-top: 6px;
+    background-image: linear-gradient(to right, #a408cf, #cf08b4, #cf0879); 
 }
 
 .HTML{
@@ -44,7 +52,7 @@
     align-items: center;
     position:absolute;
     width: 100%;
-    top: 30%;
+    top: 22%;
 }
 
 .langs-container{
@@ -81,7 +89,11 @@
 }
 
 .langs-container .skills-number5{
-    padding-left:88%;
+    padding-left:92%;
+}
+
+.langs-container .skills-number6{
+    padding-left:80%;
 }
 
 .langs-container h1 {
@@ -129,6 +141,10 @@
     }
     
     .langs-container .skills-number5{
-        padding-left:50%;
+        padding-left:83%;
+    }
+
+    .langs-container .skills-number6{
+        padding-left:75%;
     }
 }

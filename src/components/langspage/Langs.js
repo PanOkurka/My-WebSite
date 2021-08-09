@@ -22,7 +22,10 @@ function Langs() {
                         <div className="w3-container w3-blue w3-round-xlarge PHP" ><span className="skills-number4">25%</span></div>
                         <br />
                         <p className="skilstext">ReactJS</p>
-                        <div class="w3-container w3-blue w3-round-xlarge REACTJS" ><span className="skills-number5">55%</span></div>
+                        <div class="w3-container w3-blue w3-round-xlarge REACTJS" ><span className="skills-number5">65%</span></div>
+                        <br />
+                        <p className="skilstext">Dockerfile</p>
+                        <div class="w3-container w3-blue w3-round-xlarge Dockerfile" ><span className="skills-number6">30%</span></div>
                     </div>
             </div>
         </div>
