@@ -4,6 +4,8 @@ const words = [
     'JS',
     'PHP',
     'NodeJS',
-    'ReactJS'
+    'ReactJS',
+    'Dockerfile',
+    'Java'
   ]
   export default words

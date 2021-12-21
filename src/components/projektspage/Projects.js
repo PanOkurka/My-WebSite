@@ -13,10 +13,10 @@ function Projects() {
                     <Card>
                         <Card.Img variant="top" src="AtropolSite.png" />
                         <Card.Body>
-                        <Card.Title>Atropol Dev. Site</Card.Title>
+                        <Card.Title>Atropol</Card.Title>
                         <Card.Text>
-                            A small website to display developer of Atropol Team <br /><br />
-                            <a href='https://dev.atropol.net' className='FixedTest' target='_self'>Link Here</a>
+                            A small hosting for CZ and SK. (Out of Date) <br /><br />
+                            <a href='https://dsc.gg/atropol' className='FixedTest' target='_self'>Link Here</a>
                         </Card.Text>
                         </Card.Body>
                     </Card>
@@ -26,7 +26,7 @@ function Projects() {
                         <Card.Title>OkurkaCraft Site</Card.Title>
                         <Card.Text>
                             Just my little website for my Minecraft Server!<br /><br />
-                            <a href='https://okurkacraft.atropol-games.org' className='FixedTest' target='_self'>Link Here</a>
+                            <a href='/' className='FixedTest' target='_self'>Link Here (Off)</a>
                         </Card.Text>
                         </Card.Body>
                     </Card>
