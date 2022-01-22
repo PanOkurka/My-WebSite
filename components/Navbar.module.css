@@ -1,0 +1,173 @@
+.navbar {
+    background: #23272A;
+    background-color: #23272A;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position:absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background: #23272A;
+  }
+  
+  .container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    justify-content: center;
+    background: #23272A;
+  }
+  
+  .navbarLogo {
+    color: white;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    background: #23272A;
+  }
+
+  .navbarIcon {
+    margin-right: 0.5rem;
+    background: #23272A;
+  }
+  
+  .navMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    justify-content: flex-end;
+    background-color: #23272A;
+    background: #23272A;
+  }
+  
+  .navItem {
+    height: 60px;
+    background-color: #23272A;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .navItem:hover {
+    border-bottom: 2px solid #7289DA;
+  }
+  
+  .navLinks {
+    background-color: #23272A;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+  
+  .faBars {
+    color: #7289DA;
+  }
+  
+  .menuIcon {
+    display: none;
+    background: #23272A;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .navMenu {
+      display:table;
+      flex-direction:column;
+      width: 100%;
+      height: 95vh;
+      position: fixed;
+      top: 60px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      background: #23272A;
+    }
+  
+    .navMenu.active {
+      background: transparent;
+      left: 0;
+      opacity: 1;
+      transition: all 0.6s ease;
+      z-index: 1;
+      background: #23272A;
+    }
+  
+    .navLinks {
+      color: white;
+      text-align:center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+      background: #23272A;
+    }
+  
+    .navLinks:hover {
+      color: #7289DA;
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+  
+    .navItem:hover {
+      border: none;
+    }
+  
+    .navItem {
+      width: 100%;
+      background: #23272A;
+    }
+  
+    .navbarLogo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+      background: #23272A;
+    }
+  
+    .menuIcon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 35%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      background: #23272A;
+    }
+  
+    .faTimes {
+      color: #7289DA;
+      font-size: 2rem;
+    }
+  
+    .navBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 120px;
+      background: #23272A;
+    }
+  }
