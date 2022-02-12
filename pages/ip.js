@@ -1,0 +1,42 @@
+import Layout from '../components/layout'
+import ParticlesComponent from '../components/paticlecomponent'
+import {useState,useEffect} from 'react'
+import axios from 'axios'
+
+export default function IPFinder() {
+
+    const [ip, setIP] = useState('');
+    const [country, setCountry] = useState('');
+
+    const getData = async () => {
+        const res = await axios.get('https://geolocation-db.com/json/')
+        setIP(res.data.IPv4);
+        setCountry(res.data.country_name);
+    }
+
+
+    useEffect( () => {
+        //passing getData method to the lifecycle method
+        getData()
+    
+      }, [])
+
+  return (
+    <Layout>
+       <>
+              <ParticlesComponent />
+              <div className='IPFinder'>
+                    <div className='data'>
+                        <h1>Your IP</h1>
+                        <h2>{ip}</h2>
+                        <br/>
+                        <h1>You are from</h1>
+                        <h2>{country}</h2>
+                        <br/>
+                        <img src='https://cdn.discordapp.com/emojis/895685973097205822.webp?size=96&quality=lossless' alt='haha' />
+                    </div>
+              </div>
+        </>
+    </Layout>
+  )
+}
