@@ -62,7 +62,7 @@ export default function Projects() {
                             <Card.Title>Ethernal.cz</Card.Title>
                             <Card.Text>
                                 Simple NestJS website for Ethernal.<br /><br />
-                                <a href='https://www.ethernal.cz' className='FixedTest' target='_self'>Link Here (Off-Rn)</a>
+                                <a href='https://www.ethernal.cz' className='FixedTest' target='_self'>Link Here</a>
                             </Card.Text>
                             </Card.Body>
                         </Card>
