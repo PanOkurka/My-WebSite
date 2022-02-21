@@ -13,7 +13,7 @@ export default function Projects() {
                     <div className='space-line'>
                     <CardDeck>
                     <Card>
-                        <Card.Img variant="top" src="/images/Dragonex.png" />
+                        <Card.Img variant="top" src="/images/Dragonex.jpg" />
                         <Card.Body>
                         <Card.Title>Dragonex</Card.Title>
                         <Card.Text>
@@ -57,11 +57,12 @@ export default function Projects() {
                             </Card.Body>
                         </Card>
                         <Card>
-                            <Card.Img variant="top" src="" />
+                            <Card.Img variant="top" src="/images/Ethernal.jpg" />
                             <Card.Body>
-                            <Card.Title>???</Card.Title>
+                            <Card.Title>Ethernal.cz</Card.Title>
                             <Card.Text>
-                                ???
+                                Simple NestJS website for Ethernal.<br /><br />
+                                <a href='https://www.ethernal.cz' className='FixedTest' target='_self'>Link Here (Off-Rn)</a>
                             </Card.Text>
                             </Card.Body>
                         </Card>
