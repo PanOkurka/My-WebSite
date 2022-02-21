@@ -2,6 +2,7 @@ import Layout from '../components/layout'
 import ParticlesComponent from '../components/paticlecomponent'
 import {useState,useEffect} from 'react'
 import axios from 'axios'
+import Image from 'next/image'
 
 export default function IPFinder() {
 
@@ -33,7 +34,7 @@ export default function IPFinder() {
                         <h1>You are from</h1>
                         <h2>{country}</h2>
                         <br/>
-                        <img src='https://cdn.discordapp.com/emojis/895685973097205822.webp?size=96&quality=lossless' alt='haha' />
+                        <Image alt='FunnyDoge' src='https://cdn.discordapp.com/emojis/895685973097205822.webp?size=96&quality=lossless' height='150px' width="150px" />
                     </div>
               </div>
         </>

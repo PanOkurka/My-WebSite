@@ -1,6 +1,8 @@
 /*  ./components/Navbar.jsx     */
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image'
+import Logo from '../public/images/profile.png'
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -14,7 +16,7 @@ export const Navbar = () => {
       <nav className='flex items-center flex-wrap p-3 Navbar'>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 hover:no-underline'>
-            <img src='/images/profile.png' alt='pan_okurka' className='fill-current text-white h-8 w-8 mr-2' />
+            <Image alt='pan_okurka' src={Logo} width='32px' height="32px" className='fill-current text-white h-8 w-8 mr-2' />
             <span className='text-xl text-white font-bold uppercase tracking-wide'>
               Pan_Okurka
             </span>

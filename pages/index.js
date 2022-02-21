@@ -25,7 +25,7 @@ export default function Home() {
                         </div>
                         <div className='ContentMove'>
                             <div className='Avatar'>
-                                <Image className='Avatar' src="/images/profile.gif" alt='profile' height='200px' width="200px" />
+                                <Image priority="1" className='Avatar' src="/images/profile.gif" alt='profile' height='200px' width="200px" />
                             </div>
                             <div className='Center'>
                                 <h1 className='Name'>Pan_Okurka</h1>

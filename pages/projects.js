@@ -28,7 +28,7 @@ export default function Projects() {
                         <Card.Title>OkurkaCraft Site</Card.Title>
                         <Card.Text>
                             Just my little website for my Minecraft Server!<br /><br />
-                            <a href='/' className='FixedTest' target='_self'>Link Here (Off)</a>
+                            <a href='https://okurkacraft.baby-cucumber.com' className='FixedTest' target='_self'>Link Here (Off)</a>
                         </Card.Text>
                         </Card.Body>
                     </Card>
