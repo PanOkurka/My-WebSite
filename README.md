@@ -4,14 +4,14 @@ This is my basic website for fun :D
 On this web u can find some informations about me.
 
 
-## Commit cheatsheet
+# Commit cheatsheet
 
-# Formát:<br>
+## Formát:<br>
 `
 <typ>(<rozsah>): <předmět>
 `
 
-# Typy: <br>
+## Typy: <br>
 feat: Nová funkce<br>
 fix: Oprava chyby<br>
 docs: Úprava týkající se pouze dokumentace<br>
@@ -22,6 +22,6 @@ test: Přidávání chybějící, nebo oprava existujících testů<br>
 chore: Změna, nebo úprava build-scriptů.<br>
 
 
-# Rozsah (nepoviné): <br>
+## Rozsah (nepoviné): <br>
 Rozsah může být cokoliv označující místo změny, kterou commit zasahuje. <br>
 Například název pluginu, třídy apod..
