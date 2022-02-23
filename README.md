@@ -8,7 +8,7 @@ On this web u can find some informations about me.
 
 # Formát:<br>
 `
-\<\typ\>\(\<\rozsah\>\): <předmět>
+<typ>(<rozsah>): <předmět>
 `
 
 # Typy: <br>
