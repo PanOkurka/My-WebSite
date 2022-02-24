@@ -4,38 +4,30 @@ import Typing from '../components/typing'
 import ParticlesComponent from '../components/paticlecomponent'
 import Image from 'next/image'
 import Banner from '../public/images/Funny.gif'
-import present from 'present'
-import { IoIosTimer } from '@react-icons/all-files/io/IoIosTimer'
+import { motion } from 'framer-motion'
 
 export default function Home() {
 
-    const Time = present() / 1000;
-    var LoadTime = Time.toString().substring(0, 5)
-
-
   return (
     <Layout>
-       <>
+       <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
             <div className='wraper'>
               <ParticlesComponent />
-                <div className='centerBox'> 
+                <motion.div className='centerBox' exit={{y: -100 , opacity: 0, transition: {duration: 0.8}}} initial={{y: 300 , opacity: 0}} animate={{y: 0 , opacity: 1, transition: {duration: 0.8}}}> 
                     <div className='centerMain'>
                         <div className='Banner'>
                             <Image className='Banner' src={Banner} alt='Funny' />
                         </div>
                         <div className='ContentMove'>
-                            <div className='Avatar'>
+                            <motion.div className='Avatar' exit={{x: -250, opacity: 0, transition: {duration: 0.6}}} initial={{x: -300, opacity: 0}} animate={{x: 0, opacity: 1, transition: {duration: 0.7, delay: 0.3, type: 'spring', bounce: 0.25, damping: 6,}}}>
                                 <Image priority="1" className='Avatar' src="/images/profile.gif" alt='profile' height='200px' width="200px" />
-                            </div>
-                            <div className='Center'>
+                            </motion.div>
+                            <motion.div className='Center' exit={{y: 100, opacity: 0, transition: {duration: 0.6}}} initial={{y: 180, opacity: 0}} animate={{y: 0, opacity: 1, transition: {duration: 0.6, delay: 0.9}}}>
                                 <h1 className='Name'>Pan_Okurka</h1>
                                 <h2 className='text'>I code in <Typing/></h2>
                                 <div className='customText'><h2><i>„Je dost těžké najít chybu v kódu, když ji hledáte; je to ještě těžší, když předpokládáte, že váš kód je bez chyb.“</i><br/><span className='podpis'>- Steve McConnell</span></h2></div>
-                                <div className='LoadTime'>
-                                    <IoIosTimer/><h4>{LoadTime}s</h4>
-                                </div>
-                            </div>
-                            <div className='Links'>
+                            </motion.div>
+                            <motion.div className='Links' exit={{x: 250, opacity: 0, transition: {duration: 0.6}}} initial={{x: 310, opacity: 0}} animate={{x:0, opacity: 1, transition: {duration: 0.7, delay: 0.6}}}>
                                 <a href='https://github.com/PanOkurka' className='socialiconlist'>
                                     <FaGithub className='githubIcon' />
                                 </a>
@@ -48,13 +40,13 @@ export default function Home() {
                                 <a href='https://discord.gg/wn5aF2w' className='socialiconlist'>
                                     <FaDiscord className='discordIcon' />
                                 </a>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
             </div>
-        </>
+        </motion.div>
     </Layout>
   )
 }

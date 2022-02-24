@@ -3,6 +3,7 @@ import ParticlesComponent from '../components/paticlecomponent'
 import {useState,useEffect} from 'react'
 import axios from 'axios'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 export default function IPFinder() {
 
@@ -24,7 +25,7 @@ export default function IPFinder() {
 
   return (
     <Layout>
-       <>
+       <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
               <ParticlesComponent />
               <div className='IPFinder'>
                     <div className='data'>
@@ -37,7 +38,7 @@ export default function IPFinder() {
                         <Image alt='FunnyDoge' src='https://cdn.discordapp.com/emojis/895685973097205822.webp?size=96&quality=lossless' height='150px' width="150px" />
                     </div>
               </div>
-        </>
+        </motion.div>
     </Layout>
   )
 }

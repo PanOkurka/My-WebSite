@@ -2,15 +2,16 @@ import Layout from '../components/layout'
 import ParticlesComponent from '../components/paticlecomponent'
 import CardDeck from 'react-bootstrap/CardGroup'
 import Card from 'react-bootstrap/Card'
+import { motion } from 'framer-motion'
 
 export default function Projects() {
   return (
     <Layout>
-       <>
+       <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
               <ParticlesComponent />
               <div className='center2'>
                 <div className='project-container'>
-                    <div className='space-line'>
+                    <motion.div className='space-line' exit={{x: -250, opacity: 0, transition: {duration: 0.6}}} initial={{x: -300, opacity: 0}} animate={{x: 0, opacity: 1, transition: {duration: 0.7, delay: 0.3, type: 'spring', bounce: 0.25, damping: 6,}}}>
                     <CardDeck>
                     <Card>
                         <Card.Img variant="top" src="/images/Dragonex.jpg" />
@@ -44,8 +45,8 @@ export default function Projects() {
                         </Card.Body>
                     </Card>
                     </CardDeck>
-                    </div>
-                    <div className='space-line'>
+                    </motion.div>
+                    <motion.div className='space-line' exit={{x: 250, opacity: 0, transition: {duration: 0.6}}} initial={{x: 300, opacity: 0}} animate={{x: 0, opacity: 1, transition: {duration: 0.7, delay: 0.3, type: 'spring', bounce: 0.25, damping: 6,}}}>
                     <CardDeck>
                         <Card>
                             <Card.Img variant="top" src="/images/WinDriLogo.png" />
@@ -76,10 +77,10 @@ export default function Projects() {
                             </Card.Body>
                         </Card>
                     </CardDeck>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
-        </>
+        </motion.div>
     </Layout>
   )
 }
