@@ -383,23 +383,23 @@ img {
 
 /* Info page config! */
 
-.REACTJS {
-  width: 65%;
+.DATABASE {
+  width: 40%;
   height: 44px;
   font-size:20px; 
   padding-top: 6px;
   background-image: linear-gradient(to right, #3236a8, #5b32a8, #7208cf); 
 }
 
-.Dockerfile {
-  width: 40%;
+.DEVOPS {
+  width: 64%;
   height: 44px;
   font-size:20px; 
   padding-top: 6px;
   background-image: linear-gradient(to right, #a408cf, #cf08b4, #cf0879); 
 }
 
-.HTML{
+.FRONTEND{
   width:80%;
   height:44px;
   font-size:20px; 
@@ -407,28 +407,12 @@ img {
   background-image: linear-gradient(to right, #1cd308, #00a34f, #02c292);
 }
 
-.PHP{
+.BACKEND{
   width:35%;
   height:44px;
   font-size:20px; 
   padding-top: 6px;
-  background-image: linear-gradient(to right, #bf0270, #bf022b, #bf0202);
-}
-
-.NODEJS{
-  width:75%;
-  height:44px;
-  font-size:20px; 
-  padding-top: 6px;
   background-image: linear-gradient(to right, #bf3304, #bf8506, #ced902);
-}
-
-.StyleMake{
-  width:20%;
-  height:44px;
-  font-size:20px; 
-  padding-top: 6px;
-  background-image: linear-gradient(to right, #00c9af, #0274bf, #0218bf);
 }
 
 .info2 {
@@ -465,25 +449,25 @@ img {
   font-size: 25px;
 }
 
+.langs-container .skilstext-small{
+  color: rgb(231, 162, 13); 
+  font-size: 16px;
+  margin-left: 20px;
+}
+
 .langs-container .skills-number1{
   padding-left:91%;
 }
 .langs-container .skills-number2{
-  padding-left:92%;
-}
-.langs-container .skills-number3{
-  padding-left:70%;
-}
-.langs-container .skills-number4{
-  padding-left:78%;
+  padding-left:82%;
 }
 
 .langs-container .skills-number5{
-  padding-left:92%;
+  padding-left:84%;
 }
 
 .langs-container .skills-number6{
-  padding-left:80%;
+  padding-left:89%;
 }
 
 .langs-container h1 {
