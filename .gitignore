@@ -33,5 +33,5 @@ yarn-error.log*
 # ESOZ Page
 
 /pages/esoz-po.js
-/components/esoz-seznam.js
-/components/tpo-seznam.js
+/components/esoz-seznam.json
+/components/tpo-seznam.json
