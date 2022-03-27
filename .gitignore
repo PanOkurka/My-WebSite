@@ -28,3 +28,10 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+
+# ESOZ Page
+
+/pages/esoz-po.js
+/components/esoz-seznam.js
+/components/tpo-seznam.js

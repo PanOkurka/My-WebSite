@@ -351,6 +351,10 @@ img {
   color: #7289DA;
 }
 
+.blurpur-text {
+  color: #7289DA !important;
+}
+
 @media only screen and (max-width: 1100px){
   .bio-container{
     width: 70%;
@@ -1119,3 +1123,4 @@ text-decoration: none;
     transform: skew(-1deg);
  }
 }
+
