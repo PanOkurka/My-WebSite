@@ -25,7 +25,7 @@ export default function Post({ post }) {
           <Image alt={post.author.name} src={post.author.profilePictureUrl} className="f-img-border" height="80" width="80" />
             <strong>
               <Link href={post.author.permalink}>
-                <a className='text-xl pl-2'>{post.author.name}</a>
+                <a className='text-xl pl-2 hover:no-underline'>{post.author.name}</a>
               </Link>
             </strong>
           </div>

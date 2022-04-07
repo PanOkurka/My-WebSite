@@ -11,21 +11,23 @@ export default function Authors({ authors }) {
     <Layout>
       <ParticlesComponent/>
       <motion.div className="text-white absolute w-full left-0 flex flex-col items-center content-center mt-14" exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
-        <div className='flex flex-wrap w-1/2 flex-row items-center content-center'>
+        <div className='flex flex-wrap w-1/2 flex-row items-center AuthorList'>
           {authors.map(author => (
-            <div key={author.slug}>
-              <h2>
+            <div key={author.slug} className='Autor-List text-center'>
+              <h2 className='pb-2 mb-2 border-b'>
                 <Link href={author.permalink}>
-                  <a>{author.name}</a>
+                  <a className='text-2xl hover:no-underline'>{author.name}</a>
                 </Link>
               </h2>
 
-              <Image alt={author.name} src={author.profilePictureUrl} height="80" width="80" />
+              <div>
+                <Image alt={author.name} src={author.profilePictureUrl} className='f-img-border' height="80" width="80" />
+              </div>
 
-              <p>{author.posts.length} post(s)</p>
+              <p className='mt-3'>{author.posts.length} post(s)</p>
 
               <Link href={author.permalink}>
-                <a>Go to profile →</a>
+                <a className='hover:no-underline'>Go to profile →</a>
               </Link>
             </div>
           ))}
