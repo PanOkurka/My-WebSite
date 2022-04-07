@@ -15,7 +15,8 @@ export default function Post({ post }) {
 
   return (
     <Layout>
-    <motion.div className="text-white absolute w-full left-0 flex flex-col items-center content-center" exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
+    <ParticlesComponent/>
+    <motion.div className="text-white absolute w-full left-0 flex flex-col items-center content-center mt-10" exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
       <div className='f-post'>
         <h1 className='text-3xl'>{post.title}</h1>
 
@@ -34,6 +35,12 @@ export default function Post({ post }) {
         </div>
 
         <div dangerouslySetInnerHTML={{ __html: post.body }} className='mt-2 pt-3 border-t' />
+
+        <div className='mt-3 pt-3 border-t'>
+          <Link href='/forum'>
+            <a className='hover:no-underline'>← Go Back</a>
+          </Link>
+        </div>
       </div>
     </motion.div>
     </Layout>

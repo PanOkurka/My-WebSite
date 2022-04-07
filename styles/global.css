@@ -1139,6 +1139,8 @@ text-decoration: none;
   border-radius: 30px;
   border-left: 10px solid #7289DA;
   margin-bottom: 30px;
+  margin-left: 7rem;
+  z-index: 100;
 }
 
 .f-head{
@@ -1157,4 +1159,54 @@ text-decoration: none;
   border-radius: 30px;
   border-left: 10px solid #7289DA;
   margin-bottom: 30px;
+}
+
+.Autor-Row{
+  width: 28%;
+  display: grid;
+  background: #39393A;
+  padding: 20px;
+  border-radius: 30px;
+  border-left: 10px solid #7289DA;
+  margin-bottom: 30px;
+  z-index: 50;
+}
+
+.f-authors-img{
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1920px){
+  .Autor-Row{
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 1440px){
+  .Autor-Row{
+    width: 40%;
+  }
+  .f-authors-img{
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 1040px){
+  .Autor-Row{
+    width: 55%;
+  }
+  .f-authors-img{
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .AsideAuthor{
+    display: none;
+  }
+
+  .forum-post{
+    width: 80%;
+    margin-left: 0;
+  }
 }

@@ -5,12 +5,33 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { getAllPosts, getAuthorBySlug } from '../lib/api'
+import { getAllPosts, getAuthorBySlug, getAllAuthors } from '../lib/api'
 
-export default function Posts({ posts }) {
+export default function Posts({ posts, authors }) {
   return (
     <Layout>
-    <motion.div className="posts text-white absolute w-full left-0 flex flex-col items-center content-center" exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
+    <ParticlesComponent/>
+    <motion.div className="posts text-white absolute w-full left-0 flex flex-col items-center content-center mt-10" exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
+      <aside className='absolute left-0 ml-14 w-1/3 lg:ml-8 AsideAuthor'>
+        <h2 className='text-2xl mb-3'>Authors</h2>
+        {authors.map(author => (
+          <div key={author.slug} className='Autor-Row'>
+            <h2 className='mb-4'>
+              <Link href={author.permalink}>
+                <a className='text-xl'>{author.name}</a>
+              </Link>
+            </h2>
+
+            <Image alt={author.name} src={author.profilePictureUrl} className="f-authors-img" height="140" width="80" />
+
+            <p className='mt-4'>{author.posts.length} post(s)</p>
+
+            <Link href={author.permalink}>
+              <a>Go to profile →</a>
+            </Link>
+          </div>
+        ))}
+      </aside>
 
       {posts.map(post => {
         const prettyDate = new Date(post.createdAt).toLocaleString('en-US', {
@@ -43,7 +64,7 @@ export default function Posts({ posts }) {
             </Link>
           </article>
         )
-      })}
+      }).reverse()}
     </motion.div>
     </Layout>
   )
@@ -55,6 +76,11 @@ export function getStaticProps() {
       posts: getAllPosts().map(post => ({
         ...post,
         author: getAuthorBySlug(post.author),
+      })),
+
+      authors: getAllAuthors().map(author => ({
+        ...author,
+        posts: getAllPosts().filter(post => post.author === author.slug),
       })),
     }
   }
