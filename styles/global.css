@@ -1176,6 +1176,15 @@ text-decoration: none;
   border-radius: 50%;
 }
 
+.AuthorPage{
+  width: 50%;
+  display: grid;
+  background: #39393A;
+  padding: 20px;
+  border-radius: 30px;
+  border-left: 10px solid #7289DA;
+}
+
 @media only screen and (max-width: 1920px){
   .Autor-Row{
     width: 35%;
