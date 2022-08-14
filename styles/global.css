@@ -32,7 +32,8 @@ img {
 /* New Utils */
 
 .wraper {
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 .centerMain h1 {
@@ -46,11 +47,12 @@ img {
 .centerBox{
   text-align: center;
   background: transparent;
-  position: relative;
+  position: absolute;
+  display: flexbox;
   justify-content: center;
   justify-items: center;
-  margin-top: 10%;
-  width: 100%;
+  width: 50%;
+  margin-left: 50vh;
 }
 
 .centerMain h2 {
@@ -118,8 +120,8 @@ img {
 }
 
 .centerMain .Links {
-  margin-top: -48%;
-  margin-left: 280px;
+  margin-top: -28vh;
+  margin-left: 65vh;
   position: absolute;
   display: flex;
 }
@@ -166,6 +168,20 @@ img {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 1440px){
+  .centerMain .Links {
+    margin-top: -38vh;
+    margin-left: 50vh;
+  }  
+}
+
+@media only screen and (max-width: 1100px){
+  .centerMain .Links {
+    margin-top: -43vh;
+    margin-left: 30vh;
+  }  
+}
+
 @media only screen and (max-width: 900px){
 
   .centerMain{
@@ -174,29 +190,33 @@ img {
       justify-items: center !important;
       align-items: center !important;
       text-align: center !important;
-      width: 80%;
+      width: 100%;
       padding-left: 0;
-      margin-left: 10%;
+      margin-left: 0;
+  }
+
+  .centerBox{
+    margin-left: 40vh;
   }
 
   .centerMain h1 {
       margin-top: 0;
-      margin-left: 26%;
+      margin-left: 10vh;
   }
     
   .centerMain h2 {
-      margin-left: 26%;
+      margin-left: 10vh;
       margin-top: 0;
   }
 
   .Avatar{
-      margin-left: 28%;
+      margin-left: 12vh;
   }
 
   .centerMain .Links {
       padding-left: 0;
-      margin-left: 24%;
-      margin-top: 10%;
+      margin-left: 8vh;
+      margin-top: 5vh;
       position: relative;
   }
 
@@ -212,6 +232,7 @@ img {
 @media only screen and (max-width: 800px) {
   .customText{
     width: 90%;
+    margin-left: 2.5vh !important;
   }
 
   .customText h2{
@@ -223,10 +244,12 @@ img {
 
   .centerBox{
     margin-top: 15%;
+    margin-left: 15vh;
+    width: 60%;
   }
 
   .Avatar{
-    margin-left: 26%;
+    margin-left: 6vh;
     width: 150px;
     height: 150px;
   }
@@ -235,12 +258,12 @@ img {
       padding-left: 0;
       margin-left: 0;
       margin-top: 8%;
-      transform: scale(0.8);
+      transform: scale(0.8) !important;
   }
 
   .customText{
     width: 100%;
-    margin-left: 16px !important;
+    margin-left: 2vh !important;
     margin-top: 18px;
   }
 
@@ -261,13 +284,60 @@ img {
   }
 }
 
-.Navbar{
+.Footer{
+  margin-left: 14px;
+  margin-bottom: 10%;
   position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  background: #39393A;
+  bottom: 0;
+  color: white;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media screen and (max-width: 770px){
+
+  .CustomSideBar{
+    width: 13rem !important;
+  }
+
+  .Footer{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+
+  .CustomSideBar{
+    width: 4rem !important;
+  }
+
+  .CustomTextSide{
+    display: none !important;
+  }
+
+  .CustomLogoSide{
+    padding-left: 0 !important;
+  }
+}
+
+.hoverNavItem:hover {
+  background: #2C2F33;
+  text-decoration: none;
+}
+
+.Middle{
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.CustomBorder{
+  border-radius: 50%;
 }
 
 .blurpur:hover{
@@ -297,7 +367,7 @@ img {
   position: absolute;
   justify-content: center;
   justify-items: center;
-  top: 25%;
+  top: 20vh;
   width: 100%;
   left: 0;
 }
@@ -357,7 +427,8 @@ img {
 
 @media only screen and (max-width: 1100px){
   .bio-container{
-    width: 70%;
+    width: 80%;
+    margin-left: 32vh;
   }
 }
 
@@ -381,6 +452,16 @@ img {
 
   .p {
       font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .center {
+    top: 4vh;
+  }
+
+  .bio-container{
+    margin-left: 10vh;
   }
 }
 
@@ -425,7 +506,7 @@ img {
   align-items: center;
   position:absolute;
   width: 100%;
-  top: 22%;
+  top: 16vh;
   left: 0;
 }
 
@@ -485,12 +566,13 @@ img {
 @media only screen and (max-width: 1440px){
   .langs-container{
     width: 70%;
-}
+    margin-left: 25vh;
+  }
 }
 
 @media only screen and (max-width: 1100px){
   .langs-container{
-    width: 85%;
+    width: 74%;
 }
 }
 
@@ -500,7 +582,7 @@ img {
   }
 
   .langs-container{
-      width: 90%;
+      width: 64%;
   }
 
   .langs-container-3{
@@ -513,25 +595,42 @@ img {
   }
 
   .langs-container .skills-number1{
-      padding-left:88%;
+      padding-left:85%;
   }
   .langs-container .skills-number2{
-      padding-left:86%;
-  }
-  .langs-container .skills-number3{
-      padding-left:60%;
-  }
-  .langs-container .skills-number4{
-      padding-left:75%;
+      padding-left:74%;
   }
   
   .langs-container .skills-number5{
-      padding-left:83%;
+      padding-left:77%;
   }
 
   .langs-container .skills-number6{
-      padding-left:78%;
+      padding-left:84%;
   }
+}
+
+@media only screen and (max-width: 500px){
+  .langs-container{
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .langs-container .skills-number1{
+    padding-left:80%;
+}
+.langs-container .skills-number2{
+    padding-left:65%;
+}
+
+.langs-container .skills-number5{
+    padding-left:69%;
+}
+
+.langs-container .skills-number6{
+    padding-left:80%;
+}
+
 }
 
 
@@ -545,9 +644,9 @@ img {
   position: absolute;
   justify-content: center;
   justify-items: center;
-  top: 10%;
+  top: 3vh;
   width: 100%;
-  left: 0;
+  left: 10vh;
 }
 
 .FixedTest {
@@ -578,6 +677,12 @@ text-decoration: none;
   justify-content: center;
   justify-items: center;
   align-items: center;
+  transform: scale(.9);
+  transition: 400ms
+}
+
+.card:hover {
+  transform: scale(1);
 }
 
 .card > hr {
@@ -695,6 +800,34 @@ text-decoration: none;
 
 .card-group .card {
   margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1440px){
+  .project-container{
+    width: 80%;
+  }
+
+  .center2{
+    top: 1vh;
+    width: 100%;
+    padding-left: 20vh;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .project-container{
+    width: 90%;
+  }
+  .center2{
+    padding-left: 30vh;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .center2{
+    padding-left: 8vh;
+  }
 }
 
 @media (min-width: 576px) {
@@ -872,6 +1005,7 @@ text-decoration: none;
     align-items: center;
     align-content: center;
     display: grid;
+    margin-left: 50vh;
     top: 30%;
 }
 
@@ -882,6 +1016,18 @@ text-decoration: none;
 
 .notfound-header .number {
     font-size: 80px;
+}
+
+@media screen and (max-width: 1024px){
+  .notfound-header{
+    margin-left: 35vh;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .notfound-header{
+    margin-left: 10vh;
+  }
 }
 
 /* New Glitch*/
@@ -1122,114 +1268,4 @@ text-decoration: none;
   100% {
     transform: skew(-1deg);
  }
-}
-
-
-/* 
-
-    Forum
-
-*/
-
-.forum-post{
-  width: 60%;
-  display: grid;
-  background: #39393A;
-  padding: 20px;
-  border-radius: 30px;
-  border-left: 10px solid #7289DA;
-  margin-bottom: 30px;
-  margin-left: 7rem;
-  z-index: 100;
-}
-
-.f-head{
-  border-bottom: 1px solid #A6A6A6;
-}
-
-.f-img-border{
-  border-radius: 50%;
-}
-
-.f-post{
-  width: 80%;
-  display: grid;
-  background: #39393A;
-  padding: 20px;
-  border-radius: 30px;
-  border-left: 10px solid #7289DA;
-  margin-bottom: 30px;
-}
-
-.Autor-Row{
-  width: 28%;
-  display: grid;
-  background: #39393A;
-  padding: 20px;
-  border-radius: 30px;
-  border-left: 10px solid #7289DA;
-  margin-bottom: 30px;
-  z-index: 50;
-}
-
-.f-authors-img{
-  border-radius: 50%;
-}
-
-.AuthorPage{
-  width: 50%;
-  display: grid;
-  background: #39393A;
-  padding: 20px;
-  border-radius: 30px;
-  border-left: 10px solid #7289DA;
-}
-
-.Autor-List{
-  width: 34%;
-  display: grid;
-  background: #39393A;
-  padding: 20px;
-  border-radius: 30px;
-  border-left: 10px solid #7289DA;
-  border-right: 10px solid #7289DA;
-}
-
-.AuthorList{
-  justify-content: space-evenly !important;
-}
-
-@media only screen and (max-width: 1920px){
-  .Autor-Row{
-    width: 34%;
-  }
-}
-
-@media only screen and (max-width: 1440px){
-  .Autor-Row{
-    width: 40%;
-  }
-  .f-authors-img{
-    transform: scale(0.9);
-  }
-}
-
-@media only screen and (max-width: 1040px){
-  .Autor-Row{
-    width: 55%;
-  }
-  .f-authors-img{
-    transform: scale(0.9);
-  }
-}
-
-@media only screen and (max-width: 768px){
-  .AsideAuthor{
-    display: none;
-  }
-
-  .forum-post{
-    width: 80%;
-    margin-left: 0;
-  }
 }

@@ -1,76 +1,65 @@
-/*  ./components/Navbar.jsx     */
+import React, { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
-import { useState } from 'react';
-import Image from 'next/image'
-import Logo from '../public/images/profile.png'
-
+//<Link to='/wiki' classNameName='nav-link'>Wiki</Link>
+import { FaCodeBranch } from '@react-icons/all-files/fa/FaCodeBranch'
+import { FaHome } from '@react-icons/all-files/fa/FaHome'
+import { FaBook } from '@react-icons/all-files/fa/FaBook'
+import { BsFillInfoCircleFill } from '@react-icons/all-files/bs/BsFillInfoCircleFill'
+import { FaClipboardList } from '@react-icons/all-files/fa/FaClipboardList'
 export const Navbar = () => {
-  const [active, setActive] = useState(false);
 
-  const handleClick = () => {
-    setActive(!active);
-  };
-
-  return (
-    <>
-      <nav className='flex items-center flex-wrap p-3 Navbar'>
-        <Link href='/'>
-          <a className='inline-flex items-center p-2 mr-4 hover:no-underline'>
-            <Image alt='pan_okurka' src={Logo} width='32px' height="32px" className='fill-current text-white h-8 w-8 mr-2' />
-            <span className='text-xl text-white font-bold uppercase tracking-wide'>
-              Pan_Okurka
-            </span>
-          </a>
-        </Link>
-        <button
-          className=' inline-flex p-3 rounded lg:hidden text-white ml-auto hover:no-underline blurpur outline-none'
-          onClick={handleClick}
-        >
-          <svg
-            className='w-6 h-6'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M4 6h16M4 12h16M4 18h16'
-            />
-          </svg>
-        </button>
-        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
-        <div
-          className={`${
-            active ? '' : 'hidden'
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
-        >
-          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
-            <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:no-underline blurpur'>
-                Home
-              </a>
-            </Link>
-            <Link href='/bio'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:no-underline blurpur'>
-                Bio
-              </a>
-            </Link>
-            <Link href='/info'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:no-underline blurpur'>
-                Some Info
-              </a>
-            </Link>
-            <Link href='/projects'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:no-underline blurpur'>
-                Projects
-              </a>
-            </Link>
+    return (
+      <aside className="h-screen fixed CustomSideBar z-30 w-60" aria-label="Sidebar">
+      <div className="overflow-y-auto h-screen py-4 px-3 rounded" style={{backgroundColor: '#23272A'}}>
+         <Link href="/">
+            <a className="flex pl-2.5 mb-5 CustomLogoSide hover:no-underline">
+                  <img className="mr-3 h-9 CustomBorder" alt='logo' src='/images/profile.gif' />
+                  <span className="self-center text-lg font-semibold whitespace-nowrap text-white CustomTextSide hover:no-underline">Pan_Okurka</span>
+            </a>
+         </Link>
+         <ul className="space-y-2">
+            <li>
+               <Link href="/">
+                  <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
+                     <FaHome className="w-6 h-6 transition duration-75 text-gray-400 group-hover:text-white"></FaHome>
+                     <span className="ml-3 CustomTextSide">Home</span>
+                  </a>
+               </Link>
+            </li>
+            <li>
+               <Link href="/bio" >
+                  <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
+                     <FaBook className="w-6 h-6 transition duration-75 text-gray-400 group-hover:text-white"></FaBook>
+                     <span className="flex-1 ml-3 whitespace-nowrap CustomTextSide">Bio</span>
+                  </a>
+               </Link>
+            </li>
+            <li>
+               <Link href="/info">
+                  <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
+                     <BsFillInfoCircleFill className="w-6 h-6 transition duration-75 text-gray-400 group-hover:text-white"></BsFillInfoCircleFill>
+                     <span className="flex-1 ml-3 whitespace-nowrap CustomTextSide">Some Info</span>
+                  </a>
+               </Link>
+            </li>
+            <li>
+               <Link href="/projects">
+                  <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
+                     <FaClipboardList className="w-6 h-6 transition duration-75 text-gray-400 group-hover:text-white"></FaClipboardList>
+                     <span className="flex-1 ml-3 whitespace-nowrap CustomTextSide">Projects</span>
+                  </a>
+               </Link>
+            </li>
+        </ul>
+         <div className='Footer' id="Footer">
+          <div className="Middle">
+                    <h3 className='text-lg'>&copy; 2020-{new Date().getFullYear()} Pan_Okurka</h3>
+                        <p className='infos mt-4'> 
+                            <span className='mt-5 items-center content-center flex justify-center'><FaCodeBranch/> prod-2.0.0</span>
+                        </p>
           </div>
         </div>
-      </nav>
-    </>
-  );
-};
+      </div>
+   </aside>
+    )
+}
