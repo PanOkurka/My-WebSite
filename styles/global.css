@@ -73,6 +73,9 @@ img {
   justify-items: center;
   margin-top: 30%;
   width: 100%;
+  -webkit-box-shadow: 0px 20px 4px 0px rgba(35,39,42,1);
+  -moz-box-shadow: 0px 20px 4px 0px rgba(35,39,42,1);
+  box-shadow: 0px 20px 4px 0px rgba(35,39,42,1);
 }
 
 .ContentMove{
@@ -474,6 +477,9 @@ img {
   font-size:20px; 
   padding-top: 6px;
   background-image: linear-gradient(to right, #3236a8, #5b32a8, #7208cf); 
+  -webkit-box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
+  -moz-box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
+  box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
 }
 
 .DEVOPS {
@@ -482,6 +488,9 @@ img {
   font-size:20px; 
   padding-top: 6px;
   background-image: linear-gradient(to right, #a408cf, #cf08b4, #cf0879); 
+  -webkit-box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
+  -moz-box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
+  box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
 }
 
 .FRONTEND{
@@ -490,6 +499,9 @@ img {
   font-size:20px; 
   padding-top: 6px;
   background-image: linear-gradient(to right, #1cd308, #00a34f, #02c292);
+  -webkit-box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
+  -moz-box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
+  box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
 }
 
 .BACKEND{
@@ -498,6 +510,9 @@ img {
   font-size:20px; 
   padding-top: 6px;
   background-image: linear-gradient(to right, #bf3304, #bf8506, #ced902);
+  -webkit-box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
+  -moz-box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
+  box-shadow: 10px 10px 4px 0px rgba(35,39,42,1);
 }
 
 .info2 {
@@ -678,7 +693,10 @@ text-decoration: none;
   justify-items: center;
   align-items: center;
   transform: scale(.9);
-  transition: 400ms
+  transition: 400ms;
+  -webkit-box-shadow: 0px 20px 4px 0px rgba(35,39,42,1);
+  -moz-box-shadow: 0px 20px 4px 0px rgba(35,39,42,1);
+  box-shadow: 0px 20px 4px 0px rgba(35,39,42,1);
 }
 
 .card:hover {
