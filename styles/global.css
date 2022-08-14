@@ -1269,3 +1269,15 @@ text-decoration: none;
     transform: skew(-1deg);
  }
 }
+
+tbody .Potvrzeno {
+  background: green;
+}
+
+tbody .Odmítnuto{
+  background: red;
+}
+
+tbody .Zamítnuto{
+  background: red;
+}
