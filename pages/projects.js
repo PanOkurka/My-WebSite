@@ -68,11 +68,12 @@ export default function Projects() {
                             </Card.Body>
                         </Card>
                         <Card>
-                            <Card.Img variant="top" src="" />
+                            <Card.Img variant="top" src="/images/serverjars.png" />
                             <Card.Body>
-                            <Card.Title>???</Card.Title>
+                            <Card.Title>MINECRAFT JARS</Card.Title>
                             <Card.Text>
-                                ???<br></br>
+                                Just a page with server jars.<br/>Using ServerJars.com API<br></br>
+                                <a href='https://serverjars.baby-cucumber.com/' className='FixedTest' target='_self'>Link Here</a>
                             </Card.Text>
                             </Card.Body>
                         </Card>
