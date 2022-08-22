@@ -6,6 +6,7 @@ import { FaHome } from '@react-icons/all-files/fa/FaHome'
 import { FaBook } from '@react-icons/all-files/fa/FaBook'
 import { BsFillInfoCircleFill } from '@react-icons/all-files/bs/BsFillInfoCircleFill'
 import { FaClipboardList } from '@react-icons/all-files/fa/FaClipboardList'
+import { AiOutlineFileSearch } from '@react-icons/all-files/ai/AiOutlineFileSearch'
 export const Navbar = () => {
 
     return (
@@ -47,6 +48,14 @@ export const Navbar = () => {
                   <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
                      <FaClipboardList className="w-6 h-6 transition duration-75 text-gray-400 group-hover:text-white"></FaClipboardList>
                      <span className="flex-1 ml-3 whitespace-nowrap CustomTextSide">Projects</span>
+                  </a>
+               </Link>
+            </li>
+            <li>
+               <Link href="/ip">
+                  <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
+                     <AiOutlineFileSearch className="w-6 h-6 transition duration-75 text-gray-400 group-hover:text-white"></AiOutlineFileSearch>
+                     <span className="flex-1 ml-3 whitespace-nowrap CustomTextSide">Your IP</span>
                   </a>
                </Link>
             </li>
