@@ -3,7 +3,7 @@ import { FaGithub, FaDiscord, FaTwitter, FaInstagram } from 'react-icons/fa'
 import Typing from '../components/typing'
 import ParticlesComponent from '../components/paticlecomponent'
 import Image from 'next/image'
-import Banner from '../public/images/Funny.gif'
+import Banner from '../public/images/standard.gif'
 import { motion } from 'framer-motion'
 
 export default function Home() {
