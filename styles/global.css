@@ -190,19 +190,42 @@ img {
 
 @media only screen and (max-width: 1440px){
   .centerMain .Links {
-    margin-top: -38vh;
-    margin-left: 50vh;
+    margin-top: -22vh;
+    margin-left: 64vh;
   }  
+
+  .centerBox{
+    margin-left: 15vh;
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1100px){
   .centerMain .Links {
-    margin-top: -43vh;
+    margin-top: -26vh;
     margin-left: 30vh;
   }  
+
+  .Banner{
+    width: 65vh !important;
+    height: 30vh !important;
+  }
+
+  .ContentMove{
+    width: 65vh;
+  }
 }
 
 @media only screen and (max-width: 900px){
+
+  .Banner{
+    width: 48vh !important;
+    height: 18vh !important;
+  }
+
+  .ContentMove{
+    width: 48vh;
+  }
 
   .centerMain{
       top: 20%;
@@ -216,28 +239,27 @@ img {
   }
 
   .centerBox{
-    margin-left: 40vh;
+    margin-left: 10vh;
   }
 
   .centerMain h1 {
       margin-top: 0;
-      margin-left: 10vh;
+      margin-left: 12vh;
   }
     
   .centerMain h2 {
-      margin-left: 10vh;
+      margin-left: 12vh;
       margin-top: 0;
   }
 
   .Avatar{
-      margin-left: 12vh;
+      margin-left: 15vh;
+      margin-top: -20px;
   }
 
   .centerMain .Links {
-      padding-left: 0;
-      margin-left: 8vh;
-      margin-top: 5vh;
-      position: relative;
+      margin-left: 12vh;
+      margin-top: 1vh;
   }
 
   .customText{
@@ -260,22 +282,31 @@ img {
 
 @media only screen and (max-width: 520px){
 
+  .Banner{
+    width: 32vh !important;
+    height: 14vh !important;
+  }
+
+  .ContentMove{
+    width: 32vh;
+  }
+
   .centerBox{
-    margin-top: 15%;
-    margin-left: 15vh;
-    width: 60%;
+    margin-top: 8%;
+    margin-left: 10vh;
+    width: 70%;
   }
 
   .Avatar{
-    margin-left: 6vh;
+    margin-left: 7vh;
+    margin-top: 1vh;
     width: 150px;
     height: 150px;
   }
 
   .centerMain .Links {
-      padding-left: 0;
       margin-left: 0;
-      margin-top: 8%;
+      margin-top: 0vh;
       transform: scale(0.8) !important;
   }
 
@@ -313,10 +344,6 @@ img {
 }
 
 @media screen and (max-width: 770px){
-
-  .CustomSideBar{
-    width: 13rem !important;
-  }
 
   .Footer{
     display: none;
@@ -407,7 +434,11 @@ img {
 .bio-container{
   width: 50%;
   padding: 10px;
+  padding-bottom: 6vh;
   margin: 0;
+  border: 5px solid;
+  border-image-source: linear-gradient(140deg, rgba(114,137,218,1) 4%, rgba(170,134,13,0) 13%, rgba(227,199,29,0) 38%, rgba(255,222,86,0) 60%, rgba(209,179,57,0) 87%, rgba(114,137,218,1) 100%);
+  border-image-slice: 1;
 }
 
 .bio-container-2{
@@ -444,7 +475,7 @@ img {
 @media only screen and (max-width: 1100px){
   .bio-container{
     width: 80%;
-    margin-left: 32vh;
+    margin-left: 8vh;
   }
 }
 
@@ -454,7 +485,7 @@ img {
   }
 
   .bio-container{
-      width: 90%;
+      width: 80%;
   }
 
   .bio-container-2 {
@@ -462,7 +493,7 @@ img {
   }
 
   .bio-container h1 {
-      margin-left: -120%;
+      margin-left: -56vh;
       font-size: 35px;
   }
 
@@ -476,8 +507,12 @@ img {
     top: 4vh;
   }
 
+  .bio-container h1{
+    margin-left: -30vh;
+  }
+
   .bio-container{
-    margin-left: 10vh;
+    margin-left: 6vh;
   }
 }
 
@@ -558,29 +593,37 @@ img {
 }
 
 .langs-container .skilstext{
-  color: rgb(231, 162, 13); 
+  color: #7289DA; 
   font-size: 25px;
 }
 
 .langs-container .skilstext-small{
-  color: rgb(231, 162, 13); 
+  color: #7289DA; 
   font-size: 16px;
   margin-left: 20px;
 }
 
 .langs-container .skills-number1{
   padding-left:91%;
+  color: white;
+  font-weight: 600;
 }
 .langs-container .skills-number2{
   padding-left:82%;
+  color: white;
+  font-weight: 600;
 }
 
 .langs-container .skills-number5{
   padding-left:84%;
+  color: white;
+  font-weight: 600;
 }
 
 .langs-container .skills-number6{
   padding-left:89%;
+  color: white;
+  font-weight: 600;
 }
 
 .langs-container h1 {
@@ -594,7 +637,7 @@ img {
 @media only screen and (max-width: 1440px){
   .langs-container{
     width: 70%;
-    margin-left: 25vh;
+    //margin-left: 25vh;
   }
 }
 
@@ -602,6 +645,10 @@ img {
   .langs-container{
     width: 74%;
 }
+
+ .vertical-timeline{
+  width: 75% !important;
+ }
 }
 
 @media only screen and (max-width: 800px) {
@@ -657,6 +704,10 @@ img {
 
 .langs-container .skills-number6{
     padding-left:80%;
+}
+
+.vertical-timeline{
+  margin-left: 8vh !important;
 }
 
 }
