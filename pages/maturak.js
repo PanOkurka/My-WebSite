@@ -30,8 +30,10 @@ export default function Maturak() {
                     currentIndex={currentImage}
                     views={photos.map(x => ({
                         ...x,
-                        srcset: x.srcSet,
-                        caption: x.title
+                        source: {
+                          regular: x.src,
+                          download: x.src
+                        }
                     }))}
                     />
                 </Modal>
