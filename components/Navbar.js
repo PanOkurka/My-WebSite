@@ -8,6 +8,7 @@ import { BsFillInfoCircleFill } from '@react-icons/all-files/bs/BsFillInfoCircle
 import { FaClipboardList } from '@react-icons/all-files/fa/FaClipboardList'
 import { AiOutlineFileSearch } from '@react-icons/all-files/ai/AiOutlineFileSearch'
 import { BsArrowLeftShort } from '@react-icons/all-files/bs/BsArrowLeftShort'
+import LgnBtn from './login-button';
 export const Navbar = () => {
 
    const [open, setOpen] = useState(false);
@@ -63,8 +64,11 @@ export const Navbar = () => {
                   </a>
                </Link>
             </li>
+            <li>
+               <LgnBtn state={open} />
+            </li>
         </ul>
-         <div className='Footer' id="Footer">
+         <div className='Footer absolute' id="Footer">
           <div className={`Middle duration-150 ${!open && "hidden scale-0 duration-75"}`}>
                     <h3 className='text-lg'>&copy; 2020-{new Date().getFullYear()} Pan_Okurka</h3>
                         <p className='infos mt-4'> 

@@ -29,6 +29,24 @@ img {
   display: block;
 }
 
+.logout-btn,
+.login-btn{
+  margin-top: 20px;
+  margin-left: 1vh;
+  border: 2px solid #7289DA;
+  padding: 1vh;
+  border-radius: 10px;
+  color: white;
+  transition: 400ms;
+  font-weight: 700;
+}
+
+.logout-btn:hover,
+.login-btn:hover{
+  background: #7289DA;
+  border: 2px solid white;
+}
+
 /* New Utils */
 
 .wraper {
