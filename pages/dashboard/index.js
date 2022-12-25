@@ -32,7 +32,7 @@ export default function Dashboard() {
         <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
            <ParticlesComponent />
                  <div className='center'>
-                     <h1 className='text-2xl'>You don't have perms for that!</h1>
+                     <h1 className='text-2xl'>You don&apos;t have perms for that!</h1>
                  </div>
         </motion.div>
     </Layout>
