@@ -12,5 +12,12 @@ export const authOptions = {
   ],
   secret: process.env.JWT_SECRET,
   adapter: PrismaAdapter(prisma),
+  callbacks: {
+    async session({ session, user }) {
+      session.user.role = user.role
+      
+      return session
+    }
+  },
 }
 export default NextAuth(authOptions)

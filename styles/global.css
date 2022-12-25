@@ -1078,6 +1078,17 @@ text-decoration: none;
 }
 
 
+/*
+
+  Profile
+
+*/
+
+.Profile-Box{
+  width: 50%;
+  background: #23272A;
+  border-radius: 20px;
+}
 
 /*
 

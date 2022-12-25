@@ -18,7 +18,7 @@ export const Navbar = () => {
       <div className="overflow-y-auto h-screen py-4 px-3 rounded" style={{backgroundColor: '#23272A'}}>
          <BsArrowLeftShort className={`bg-white text-black text-3xl rounded-full absolute -right-3 top-9 border border-black cursor-pointer ${!open && "rotate-180"}`} onClick={() => setOpen(!open)} />
          <Link href="/">
-            <a className="flex pl-2.5 mb-5 CustomLogoSide hover:no-underline">
+            <a className={`flex pl-2.5 pb-2 mb-3 CustomLogoSide hover:no-underline border-b-2 border-solid border-gray-500`}>
                   <img className="mr-3 h-9 CustomBorder" alt='logo' src='/images/profile.gif' />
                   <span className={`self-center text-lg font-semibold whitespace-nowrap text-white CustomTextSide hover:no-underline ${!open && "scale-0"}`}>Pan_Okurka</span>
             </a>
@@ -26,7 +26,7 @@ export const Navbar = () => {
          <ul className="space-y-2">
             <li>
                <Link href="/">
-                  <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
+                  <a className={`flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem ${!open && "justify-center"}`}>
                      <FaHome className={`text-3xl duration-75 text-gray-400`}></FaHome>
                      <span className={`ml-10 absolute CustomTextSide duration-150 ${!open && "hidden scale-0 duration-75"}`}>Home</span>
                   </a>
@@ -34,7 +34,7 @@ export const Navbar = () => {
             </li>
             <li>
                <Link href="/bio" >
-                  <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
+                  <a className={`flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem ${!open && "justify-center"}`}>
                      <FaBook className="text-3xl transition duration-75 text-gray-400 group-hover:text-white"></FaBook>
                      <span className={`flex-1 ml-10 absolute whitespace-nowrap CustomTextSide duration-150 ${!open && "hidden scale-0 duration-75"}`}>Bio</span>
                   </a>
@@ -42,7 +42,7 @@ export const Navbar = () => {
             </li>
             <li>
                <Link href="/info">
-                  <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
+                  <a className={`flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem ${!open && "justify-center"}`}>
                      <BsFillInfoCircleFill className="text-3xl transition duration-75 text-gray-400 group-hover:text-white"></BsFillInfoCircleFill>
                      <span className={`flex-1 ml-10 absolute whitespace-nowrap CustomTextSide duration-150 ${!open && "hidden scale-0 duration-75"}`}>Some Info</span>
                   </a>
@@ -50,7 +50,7 @@ export const Navbar = () => {
             </li>
             <li>
                <Link href="/projects">
-                  <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
+                  <a className={`flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem ${!open && "justify-center"}`}>
                      <FaClipboardList className="text-3xl transition duration-75 text-gray-400 group-hover:text-white"></FaClipboardList>
                      <span className={`flex-1 ml-10 absolute whitespace-nowrap CustomTextSide duration-150 ${!open && "hidden scale-0 duration-75"}`}>Projects</span>
                   </a>
@@ -58,7 +58,7 @@ export const Navbar = () => {
             </li>
             <li>
                <Link href="/ip">
-                  <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem">
+                  <a className={`flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem ${!open && "justify-center"}`}>
                      <AiOutlineFileSearch className="text-3xl transition duration-75 text-gray-400 group-hover:text-white"></AiOutlineFileSearch>
                      <span className={`flex-1 ml-10 absolute whitespace-nowrap CustomTextSide duration-150 ${!open && "hidden scale-0 duration-75"}`}>Your IP</span>
                   </a>
