@@ -37,3 +37,6 @@ yarn-error.log*
 /pages/esoz-po.js
 /components/esoz-seznam.json
 /components/tpo-seznam.json
+
+/prisma/migrations
+/prisma/dev.db
