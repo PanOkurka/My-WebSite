@@ -433,7 +433,7 @@ img {
   left: 0;
 }
 
-.center h1{
+.center .bio-container h1{
   margin-top: 60px;
   padding-left: 220px;
   text-align: center;
@@ -441,7 +441,7 @@ img {
   color: #7289DA;
 }
 
-.center h2{
+.center .bio-container h2{
   padding-left: 235px;
   background: transparent;
   text-align: center;
@@ -1088,6 +1088,46 @@ text-decoration: none;
   width: 50%;
   background: #23272A;
   border-radius: 20px;
+}
+
+.Profile-Box .Top{
+  display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3vh 0vh
+}
+
+.Profile-Box .Top h1{
+  margin-top: 1vh;
+  color: #7289DA;
+}
+
+.Profile-Box .Top img{
+  width: 180px;
+  border-radius: 50%;
+}
+
+.Profile-Box .Bottom{
+  margin-bottom: 3vh; 
+  display: flex;
+  flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile-Box .Bottom h2{
+  color: white;
+}
+
+.Profile-Box .Bottom p{
+  width: 40%;
+  background: #2C2F33;
+  padding: .5vh 0vh;
+  color: #7289DA;
+  border-radius: 15px;
 }
 
 /*
