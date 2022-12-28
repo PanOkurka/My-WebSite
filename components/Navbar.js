@@ -1,3 +1,5 @@
+/* eslint @next/next/no-img-element: 0 */
+
 import React, { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 //<Link to='/wiki' classNameName='nav-link'>Wiki</Link>

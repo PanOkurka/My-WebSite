@@ -1,3 +1,5 @@
+/* eslint @next/next/no-img-element: 0 */
+
 import Layout from '../../components/layout'
 import ParticlesComponent from '../../components/paticlecomponent'
 import { motion } from 'framer-motion'
