@@ -1130,6 +1130,95 @@ text-decoration: none;
   border-radius: 15px;
 }
 
+
+/*
+
+  Create Post
+
+*/
+
+.CreatePost .Box{
+  padding: 4vh 8vh;
+  background: #23272A;
+  color: white;
+}
+
+.CreatePost .Box textarea{
+  border-radius: 10px;
+  padding: 1vh;
+  color: black;
+}
+
+.CreatePost .Box .btn{
+  padding: 1vh 2vh;
+  background: #2C2F33;
+  border-radius: 10px;
+}
+
+/*
+
+  Drafts Page
+
+*/
+
+.DraftsPage .Box{
+  padding: 4vh 1vh;
+  background: #23272A;
+  color: white;
+  border-radius: 10px;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+
+.DraftsPage .Box > h1{
+  padding-bottom: 2vh;
+  border-bottom: 2px solid gray;
+  width: 100%;
+}
+
+.DraftsPage .Box .Drafts{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 90%;
+}
+
+.DraftsPage .Box .Drafts button{
+  width: 100%;
+}
+
+.DraftsPage .Box .Drafts .Post{
+  width: 100%;
+  background: rgba(44,47,51, 0.5);
+  padding: 1vh 2vh;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.DraftsPage .Box .Drafts .Post h1,
+.DraftsPage .Box .Drafts .Post > p {
+  padding-bottom: 0.4vh;
+  border-bottom: 1px solid gray;
+  margin-bottom: 0.4vh;
+}
+
+.DraftsPage .Box .Drafts .Post div {
+  display: flex;
+  margin-top: 2vh;
+  align-items: center;
+    justify-content: flex-start;
+}
+
+.DraftsPage .Box .Drafts .Post div > img{
+  width: 50px;
+  border-radius: 50%;
+}
+
 /*
 
   404 Page
