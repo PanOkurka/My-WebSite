@@ -9,6 +9,9 @@ import Router from 'next/router'
 
 export default function CreatePost() {
 
+    const [title, setTitle] = useState('')
+    const [content, setContent] = useState('')
+
     const { data: session } = useSession({
         required: true
       })
@@ -16,10 +19,6 @@ export default function CreatePost() {
     if(!session){
         return <button className={`login-btn`} onClick={() => signIn()}>Sign in</button>
     }
-
-
-    const [title, setTitle] = useState('')
-    const [content, setContent] = useState('')
 
     const submitPost = async (e) => {
         e.preventDefault();
