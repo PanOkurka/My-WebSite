@@ -42,7 +42,7 @@ export default function CreatePost() {
                       <ParticlesComponent />
                             <div className='center CreatePost'>
                                 <div className='Box'>
-                                    <h1 className='text-2xl mb-4'>Create a Post</h1>
+                                    <h1 className='text-2xl mb-4 font-bold'>Create a Post</h1>
                                     <div className='mt-2'>
                                         <textarea autofocus placeholder='Title' value={title} onChange={(e) => setTitle(e.target.value)} rows={1} cols={30} />
                                     </div>

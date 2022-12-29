@@ -1130,6 +1130,59 @@ text-decoration: none;
   border-radius: 15px;
 }
 
+/*
+
+  Dashboard Page
+
+*/
+
+.DashboardPage .Box{
+  padding: 4vh 1vh;
+  width: 100vh;
+  background: #23272A;
+  color: white;
+  border-radius: 10px;
+}
+
+.DashboardPage .Box > h1{
+  padding-bottom: 0.4vh;
+  border-bottom: 1px solid gray;
+}
+
+.DashboardPage .Box .Posts{
+  margin-top: 2vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+.DashboardPage .Box .Posts > h2{
+  width: 40%;
+}
+
+.DashboardPage .Box .Posts .buttons{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.DashboardPage .Box .Posts .buttons > a{
+  background: #2C2F33;
+  padding: 1vh 2.5vh;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 400ms;
+}
+
+.DashboardPage .Box .Posts .buttons > a:hover{
+  background: #7289DA;
+}
 
 /*
 
@@ -1141,6 +1194,7 @@ text-decoration: none;
   padding: 4vh 8vh;
   background: #23272A;
   color: white;
+  border-radius: 10px;
 }
 
 .CreatePost .Box textarea{
@@ -1153,6 +1207,11 @@ text-decoration: none;
   padding: 1vh 2vh;
   background: #2C2F33;
   border-radius: 10px;
+  transition: 400ms;
+}
+
+.CreatePost .Box .btn:hover{
+  background: #7289DA;
 }
 
 /*

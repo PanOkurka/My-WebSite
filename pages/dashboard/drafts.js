@@ -51,7 +51,7 @@ export default function Dashboard(props) {
                       <ParticlesComponent />
                             <div className='center DraftsPage flex flex-col justify-center align-middle'>
                                 <div className='Box'>
-                                    <h1 className='text-white text-2xl mb-4'>
+                                    <h1 className='text-white text-2xl mb-4 font-bold'>
                                         {props.drafts.lenght !== 0? "My Drafts": "No Drafts"}
                                     </h1>
 
@@ -59,7 +59,7 @@ export default function Dashboard(props) {
                                         {props.drafts.map((post) => (
                                             <button key={post.id} onClick={() => Router.push("/blog/[id]", `/blog/${post.id}`)}>
                                                 <div className='Post'>
-                                                    <h1 className='text-xl'>{post.title}</h1>
+                                                    <h1 className='text-xl font-bold'>{post.title}</h1>
                                                     <p className='mt-4'>{post.content}</p>
                                                     <div>
                                                         <img src={post.author.image} alt={post.author.name} />
