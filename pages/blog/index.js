@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import Router from 'next/router'
 import prisma from '../../lib/prismadb.ts'
 
-export const getStaticProps = async() => {
+export const getServerSideProps = async() => {
 
     const feed = await prisma.post.findMany({
         where: {
