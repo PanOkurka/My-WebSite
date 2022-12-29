@@ -1278,6 +1278,141 @@ text-decoration: none;
   border-radius: 50%;
 }
 
+
+/* 
+
+  Blog Page
+
+*/
+
+.BlogPage .Box{
+  padding: 4vh 1vh;
+  background: #23272A;
+  color: white;
+  border-radius: 10px;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+
+.BlogPage .Box > h1{
+  padding-bottom: 2vh;
+  border-bottom: 2px solid gray;
+  width: 100%;
+}
+
+.BlogPage .Box .Drafts{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 90%;
+}
+
+.BlogPage .Box .Drafts button{
+  width: 100%;
+}
+
+.BlogPage .Box .Drafts .Post{
+  width: 100%;
+  background: rgba(44,47,51, 0.5);
+  padding: 1vh 2vh;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.BlogPage .Box .Drafts .Post h1,
+.BlogPage .Box .Drafts .Post > p {
+  padding-bottom: 0.4vh;
+  border-bottom: 1px solid gray;
+  margin-bottom: 0.4vh;
+}
+
+.BlogPage .Box .Drafts .Post div {
+  display: flex;
+  margin-top: 2vh;
+  align-items: center;
+    justify-content: flex-start;
+}
+
+.BlogPage .Box .Drafts .Post div > img{
+  width: 50px;
+  border-radius: 50%;
+}
+
+/*
+
+  Blog Post Page 
+
+*/
+
+.PostPage .Box{
+  padding: 2vh 1vh;
+  background: #23272A;
+  color: white;
+  border-radius: 10px;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+
+.PostPage .Box .Post{
+  width: 100%;
+  padding: 1vh 2vh;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.PostPage .Box .Post h1,
+.PostPage .Box .Post > p {
+  padding-bottom: 0.4vh;
+  border-bottom: 1px solid gray;
+  margin-bottom: 0.4vh;
+}
+
+.PostPage .Box .Post div {
+  display: flex;
+  margin-top: 4vh;
+  align-items: center;
+    justify-content: flex-start;
+}
+
+.PostPage .Box .Post div > img{
+  width: 50px;
+  border-radius: 50%;
+}
+
+.DeleteBtn{
+  background: red !important;
+  transition: 400ms;
+}
+
+.PublishBtn{
+  background: #2C2F33 !important;
+  transition: 400ms;
+}
+
+.CancelBtn{ 
+  background: #7289DA !important;
+  transition: 400ms;
+}
+
+.CancelBtn:hover{ 
+  background: #454FBF !important;
+}
+
+.DeleteBtn:hover{
+  background: #B20000 !important;
+}
+
+.PublishBtn:hover{
+  background: #7289DA !important;
+}
+
 /*
 
   404 Page
