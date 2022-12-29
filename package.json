@@ -9,6 +9,7 @@
     "prod:build": "yarn run build:css && yarn run build"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.7",
     "@next-auth/prisma-adapter": "^1.0.5",
     "@prisma/client": "^4.8.0",
     "@react-icons/all-files": "^4.1.0",
