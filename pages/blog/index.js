@@ -1,7 +1,9 @@
+/* eslint @next/next/no-img-element: 0 */
 import Layout from '../../components/layout'
 import ParticlesComponent from '../../components/paticlecomponent'
 import { motion } from 'framer-motion'
 import Router from 'next/router'
+import prisma from '../../lib/prismadb.ts'
 
 export const getStaticProps = async() => {
 

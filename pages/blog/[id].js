@@ -1,3 +1,5 @@
+/* eslint @next/next/no-img-element: 0 */
+
 import Layout from '../../components/layout'
 import { useSession } from "next-auth/react";
 import React, { useRef, useState, Fragment } from "react";
@@ -130,7 +132,7 @@ export default function Post (props) {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Warning! You can't undo this action afterwars.
+                      Warning! You can&apos;t undo this action afterwars.
                     </p>
                   </div>
 
@@ -191,7 +193,7 @@ export default function Post (props) {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Warning! You can't undo this action afterwars.
+                      Warning! You can&apos;t undo this action afterwars.
                     </p>
                   </div>
 
