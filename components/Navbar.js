@@ -10,6 +10,7 @@ import { BsFillInfoCircleFill } from '@react-icons/all-files/bs/BsFillInfoCircle
 import { FaClipboardList } from '@react-icons/all-files/fa/FaClipboardList'
 import { AiOutlineFileSearch } from '@react-icons/all-files/ai/AiOutlineFileSearch'
 import { BsArrowLeftShort } from '@react-icons/all-files/bs/BsArrowLeftShort'
+import { MdForum } from 'react-icons/md'
 import LgnBtn from './login-button';
 export const Navbar = () => {
 
@@ -31,6 +32,14 @@ export const Navbar = () => {
                   <a className={`flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem ${!open && "justify-center"}`}>
                      <FaHome className={`text-3xl duration-75 text-gray-400`}></FaHome>
                      <span className={`ml-10 absolute CustomTextSide duration-150 ${!open && "hidden scale-0 duration-75"}`}>Home</span>
+                  </a>
+               </Link>
+            </li>
+            <li>
+               <Link href="/blog" >
+                  <a className={`flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem ${!open && "justify-center"}`}>
+                     <MdForum className="text-3xl transition duration-75 text-gray-400 group-hover:text-white"></MdForum>
+                     <span className={`flex-1 ml-10 absolute whitespace-nowrap CustomTextSide duration-150 ${!open && "hidden scale-0 duration-75"}`}>Blog</span>
                   </a>
                </Link>
             </li>
