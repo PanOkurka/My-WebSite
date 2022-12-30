@@ -1214,6 +1214,11 @@ text-decoration: none;
   background: #7289DA;
 }
 
+.tox.tox-silver-sink.tox-tinymce-aux {
+  z-index: 100000 !important;
+  position: absolute !important;
+}
+
 /*
 
   Drafts Page

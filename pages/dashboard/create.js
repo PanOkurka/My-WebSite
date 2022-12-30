@@ -57,20 +57,24 @@ export default function CreatePost() {
                                         <textarea autoFocus placeholder='Title' value={title} onChange={(e) => setTitle(e.target.value)} rows={1} cols={30} />
                                     </div>
                                     <Editor
+                                        className='z-10'
                                         tinymceScriptSrc={'/tinymce/tinymce.min.js'}
                                         onInit={(evt, editor) => editorRef.current = editor}
                                         init={{
                                         height: 500,
                                         menubar: false,
                                         plugins: [
-                                            'advlist', 'autolink', 'lists', 'link', 'image', 'charmap',
-                                            'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-                                            'insertdatetime', 'media', 'table', 'preview', 'help', 'wordcount'
+                                            'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+                                            'searchreplace', 'wordcount', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media',
+                                            'table', 'emoticons', 'template', 'help'
                                         ],
-                                        toolbar: 'undo redo | blocks | ' +
-                                            'bold italic forecolor | alignleft aligncenter ' +
-                                            'alignright alignjustify | bullist numlist outdent indent | ' +
-                                            'removeformat | help',
+                                        toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | ' +
+                                                'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+                                                'forecolor backcolor emoticons | help',
+                                        menu: {
+                                                    favs: { title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons' }
+                                                  },
+                                        menubar: 'favs file edit view insert format tools table help',
                                         content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
                                         }}
                                     />
