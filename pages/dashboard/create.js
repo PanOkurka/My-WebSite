@@ -4,13 +4,23 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 import { useSession, signIn } from "next-auth/react"
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Router from 'next/router'
+
+import { Editor } from '@tinymce/tinymce-react';
+
 
 export default function CreatePost() {
 
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
+
+    const editorRef = useRef(null);
+    const log = () => {
+        if (editorRef.current) {
+          setContent(editorRef.current.getContent());
+        }
+      };
 
     const { data: session } = useSession({
         required: true
@@ -44,11 +54,27 @@ export default function CreatePost() {
                                 <div className='Box'>
                                     <h1 className='text-2xl mb-4 font-bold'>Create a Post</h1>
                                     <div className='mt-2'>
-                                        <textarea autofocus placeholder='Title' value={title} onChange={(e) => setTitle(e.target.value)} rows={1} cols={30} />
+                                        <textarea autoFocus placeholder='Title' value={title} onChange={(e) => setTitle(e.target.value)} rows={1} cols={30} />
                                     </div>
-                                    <div className='mt-3'>
-                                        <textarea placeholder='Content' value={content} onChange={(e) => setContent(e.target.value)} rows={8} cols={50} />
-                                    </div>
+                                    <Editor
+                                        tinymceScriptSrc={'/tinymce/tinymce.min.js'}
+                                        onInit={(evt, editor) => editorRef.current = editor}
+                                        init={{
+                                        height: 500,
+                                        menubar: false,
+                                        plugins: [
+                                            'advlist', 'autolink', 'lists', 'link', 'image', 'charmap',
+                                            'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+                                            'insertdatetime', 'media', 'table', 'preview', 'help', 'wordcount'
+                                        ],
+                                        toolbar: 'undo redo | blocks | ' +
+                                            'bold italic forecolor | alignleft aligncenter ' +
+                                            'alignright alignjustify | bullist numlist outdent indent | ' +
+                                            'removeformat | help',
+                                        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+                                        }}
+                                    />
+                                    <button className='btn mr-2' onClick={log}>Log all text!</button>
                                     <button className='btn mt-4' onClick={submitPost}>Submit</button>
                                 </div>
                             </div>

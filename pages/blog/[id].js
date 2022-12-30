@@ -68,14 +68,14 @@ export default function Post (props) {
                      <div className='Box'>
                         <div className='Post'>
                             <h1 className='text-2xl font-bold'>{props.title} {!props.published && `(Draft)`}</h1>
-                            <p className='mt-4'>{props.content}</p>
-                            <div>
+                            <div className='mt-4 text' dangerouslySetInnerHTML={{ __html: props.content }}></div>
+                            <div className='infos'>
                                 <img src={props.author.image} alt={props.author.name} />
                                 <p className='ml-4'>{props.author.name}</p>
                                 <p className='ml-4'>{props.createdAt.toLocaleDateString()}</p>
                             </div>
                             {userHasValidSession && postBelongsToUser && 
-                            <div>
+                            <div className='mt-4'>
                                 <button
                                 type="button"
                                 className="inline-flex justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium DeleteBtn mr-4"

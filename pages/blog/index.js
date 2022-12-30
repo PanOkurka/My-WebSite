@@ -38,8 +38,8 @@ export default function Blog(props) {
                                             <button key={post.id} onClick={() => Router.push("/blog/[id]", `/blog/${post.id}`)}>
                                                 <div className='Post'>
                                                     <h1 className='text-xl font-bold'>{post.title}</h1>
-                                                    <p className='mt-4'>{post.content}</p>
-                                                    <div>
+                                                    <div className='mt-4 text' dangerouslySetInnerHTML={{ __html: post.content }}></div>
+                                                    <div className='infos'>
                                                         <img src={post.author.image} alt={post.author.name} />
                                                         <p className='ml-4'>{post.author.name}</p>
                                                         <p className='ml-4'>{post.createdAt.toLocaleDateString()}</p>

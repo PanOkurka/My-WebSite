@@ -83,7 +83,7 @@ export const Navbar = () => {
           <div className={`Middle duration-150 ${!open && "hidden scale-0 duration-75"}`}>
                     <h3 className='text-lg'>&copy; 2020-{new Date().getFullYear()} Pan_Okurka</h3>
                         <p className='infos mt-4'> 
-                            <span className='mt-5 items-center content-center flex justify-center'><FaCodeBranch/> prod-2.0.0</span>
+                            <span className='mt-5 items-center content-center flex justify-center'><FaCodeBranch/> prod-2.1.0</span>
                         </p>
           </div>
         </div>
