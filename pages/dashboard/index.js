@@ -15,7 +15,7 @@ export default function Dashboard() {
         return <button className={`login-btn`} onClick={() => signIn()}>Sign in</button>
     }
 
-    if(session.user.role === "Admin"){
+    if(session.user.role === "Admin" || session.user.email === process.env.SUPER_ADMIN){
         return (
             <Layout>
                <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
@@ -23,7 +23,7 @@ export default function Dashboard() {
                             <div className='center DashboardPage'>
                                 <div className='Box'>
                                     <h1 className='text-3xl font-bold' style={{color: "white"}}>Dashboard</h1>
-                                    <div className='Posts'>
+                                    <div className='List'>
                                         <h2 className='text-xl font-bold'>Posts: </h2>
                                         <div className='buttons'>
                                             <Link href='/dashboard/drafts'>
@@ -31,6 +31,14 @@ export default function Dashboard() {
                                             </Link>
                                             <Link href='/dashboard/create'>
                                                 Create Posts
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <div className='List'>
+                                        <h2 className='text-xl font-bold'>User Managment: </h2>
+                                        <div className='buttons'>
+                                            <Link href='/dashboard/users'>
+                                                Edit Users
                                             </Link>
                                         </div>
                                     </div>

@@ -1122,12 +1122,22 @@ text-decoration: none;
   color: white;
 }
 
-.Profile-Box .Bottom p{
+.Profile-Box .Bottom p,
+.Profile-Box .Bottom select{
   width: 40%;
   background: #2C2F33;
   padding: .5vh 0vh;
   color: #7289DA;
   border-radius: 15px;
+}
+
+.Profile-Box .Bottom .Btn{
+  background: #2C2F33 !important;
+  transition: 400ms;
+}
+
+.Profile-Box .Bottom .Btn:hover{
+  background: #7289DA !important;
 }
 
 /*
@@ -1149,7 +1159,7 @@ text-decoration: none;
   border-bottom: 1px solid gray;
 }
 
-.DashboardPage .Box .Posts{
+.DashboardPage .Box .List{
   margin-top: 2vh;
   display: flex;
   width: 100%;
@@ -1157,11 +1167,11 @@ text-decoration: none;
   align-items: center;
   align-content: center;
 }
-.DashboardPage .Box .Posts > h2{
+.DashboardPage .Box .List > h2{
   width: 40%;
 }
 
-.DashboardPage .Box .Posts .buttons{
+.DashboardPage .Box .List .buttons{
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -1171,7 +1181,7 @@ text-decoration: none;
     gap: 8px;
 }
 
-.DashboardPage .Box .Posts .buttons > a{
+.DashboardPage .Box .List .buttons > a{
   background: #2C2F33;
   padding: 1vh 2.5vh;
   border-radius: 10px;
@@ -1180,7 +1190,7 @@ text-decoration: none;
   transition: 400ms;
 }
 
-.DashboardPage .Box .Posts .buttons > a:hover{
+.DashboardPage .Box .List .buttons > a:hover{
   background: #7289DA;
 }
 
@@ -1291,6 +1301,36 @@ text-decoration: none;
   border-radius: 50%;
 }
 
+
+/*
+
+  Users Page
+
+*/
+
+.UsersPage .Box{
+  padding: 4vh 1vh;
+  background: #23272A;
+  color: white;
+  border-radius: 10px;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+
+.UsersPage .Box .UserList .icon{
+  border-radius: 50%;
+  width: 80px;
+}
+
+.UsersPage .Box .UserList {
+  width: 90%;
+}
+
+.UserList .Box .UserList td {
+  border: 1px solid white;
+}
 
 /* 
 
