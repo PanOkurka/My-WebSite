@@ -15,7 +15,7 @@ export default function LgnBtn({state}) {
                      <span className={`ml-10 absolute CustomTextSide duration-150 ${!state && "hidden scale-0 duration-75"}`}>Profile</span>
                   </a>
                </Link>
-               {session.user.role === "Admin" &&
+               {session.user.role === "Admin" || session.user.email === process.env.NEXT_PUBLIC_SUPER_ADMIN &&
                     <Link href="/dashboard">
                     <a className={`flex items-center p-2 text-base font-normal rounded-lg text-white hoverNavItem ${!state && "justify-center"}`}>
                       <GoDashboard className={`text-3xl duration-75 text-gray-400`}></GoDashboard>

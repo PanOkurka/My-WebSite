@@ -32,7 +32,7 @@ export default function Dashboard(props) {
 
     //console.log(props)
 
-    if(session.user.role === "Admin" || session.user.email === process.env.SUPER_ADMIN){
+    if(session.user.role === "Admin" || session.user.email === process.env.NEXT_PUBLIC_SUPER_ADMIN){
         return (
             <Layout>
                <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
