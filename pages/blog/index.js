@@ -27,7 +27,7 @@ export default function Blog(props) {
     <Layout>
        <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
               <ParticlesComponent />
-                    <div className='center BlogPage'>
+                    <div className='center-main BlogPage'>
                         <div className='Box'>
                                     <h1 className='text-white text-2xl mb-4 font-bold'>
                                         Blog

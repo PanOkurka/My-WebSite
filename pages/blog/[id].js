@@ -64,7 +64,7 @@ export default function Post (props) {
         <Layout>
         <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
            <ParticlesComponent />
-                 <div className='center PostPage'>
+                 <div className='center-main PostPage'>
                      <div className='Box'>
                         <div className='Post'>
                             <h1 className='text-2xl font-bold'>{props.title} {!props.published && `(Draft)`}</h1>
