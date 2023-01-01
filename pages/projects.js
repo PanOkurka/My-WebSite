@@ -15,8 +15,9 @@ export default function Projects() {
     <Layout>
        <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
               <ParticlesComponent />
-              <VerticalTimeline>
+              <VerticalTimeline key='list'>
                 <VerticalTimelineElement
+                    key='1'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -32,6 +33,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='2'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -46,6 +48,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='3'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -60,6 +63,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='4'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -74,6 +78,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='5'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -88,6 +93,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='6'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -102,6 +108,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='7'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -116,6 +123,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='8'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -130,6 +138,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='9'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -144,6 +153,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='10'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -158,6 +168,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='11'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -172,6 +183,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='12'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -186,6 +198,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='13'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
@@ -200,6 +213,7 @@ export default function Projects() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    key='14'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
