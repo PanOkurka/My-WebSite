@@ -50,7 +50,7 @@ export default function CreatePost() {
             <Layout>
                <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
                       <ParticlesComponent />
-                            <div className='center CreatePost'>
+                            <div className='center-main CreatePost'>
                                 <div className='Box'>
                                     <h1 className='text-2xl mb-4 font-bold'>Create a Post</h1>
                                     <div className='mt-2'>

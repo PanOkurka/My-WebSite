@@ -20,7 +20,7 @@ export default function Dashboard() {
             <Layout>
                <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
                       <ParticlesComponent />
-                            <div className='center DashboardPage'>
+                            <div className='center-main DashboardPage'>
                                 <div className='Box'>
                                     <h1 className='text-3xl font-bold' style={{color: "white"}}>Dashboard</h1>
                                     <div className='List'>

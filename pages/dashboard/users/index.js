@@ -37,7 +37,7 @@ export default function Dashboard(props) {
             <Layout>
                <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
                       <ParticlesComponent />
-                            <div className='center UsersPage'>
+                            <div className='center-main UsersPage'>
                                 <div className='Box'>
                                    <h1 className='text-2xl font-bold pb-2 mb-2'>List of Users</h1>
                                    <div class="overflow-x-auto relative shadow-md sm:rounded-lg UserList">

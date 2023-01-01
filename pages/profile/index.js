@@ -20,7 +20,7 @@ export default function Profile() {
     <Layout>
        <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
               <ParticlesComponent />
-                    <div className='center'>
+                    <div className='center-main'>
                         <div className='Profile-Box'>
                           <div className='Top'>
                             <img src={session.user.image} alt={session.user.name} />

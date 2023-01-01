@@ -51,7 +51,7 @@ export default function Dashboard(props) {
             <Layout>
                <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
                       <ParticlesComponent />
-                            <div className='center DraftsPage flex flex-col justify-center align-middle'>
+                            <div className='center-main DraftsPage flex flex-col justify-center align-middle'>
                                 <div className='Box'>
                                     <h1 className='text-white text-2xl mb-4 font-bold'>
                                         {props.drafts.lenght !== 0? "My Drafts": "No Drafts"}

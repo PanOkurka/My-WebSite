@@ -52,7 +52,7 @@ export default function Profile(props) {
         <Layout>
            <motion.div exit={{opacity: 0, transition: {duration: 0.6}}} initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.6}}}>
                   <ParticlesComponent />
-                        <div className='center'>
+                        <div className='center-main'>
                             <div className='Profile-Box'>
                                 <h1 className='text-white text-lg mt-2 font-bold'>User Edit</h1>
                               <div className='Top'>

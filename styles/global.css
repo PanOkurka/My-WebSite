@@ -1084,6 +1084,21 @@ text-decoration: none;
 
 */
 
+.center-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  position: absolute;
+  justify-content: center;
+  justify-items: center;
+  top: 10vh;
+  margin-bottom: 4vh;
+  width: 100%;
+  left: 0;
+}
+
 .Profile-Box{
   width: 50%;
   background: #23272A;
