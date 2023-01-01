@@ -16,7 +16,7 @@ export default function Home() {
                 <motion.div className='centerBox' exit={{y: -100 , opacity: 0, transition: {duration: 0.8}}} initial={{y: 300 , opacity: 0}} animate={{y: 0 , opacity: 1, transition: {duration: 0.8}}}> 
                     <div className='centerMain'>
                         <div className='Banner'>
-                            <Image className='Banner' src={Banner} alt='Funny' />
+                            <Image priority="2" className='Banner' src={Banner} alt='Funny' />
                         </div>
                         <div className='ContentMove'>
                             <motion.div className='Avatar' exit={{x: -250, opacity: 0, transition: {duration: 0.6}}} initial={{x: -300, opacity: 0}} animate={{x: 0, opacity: 1, transition: {duration: 0.7, delay: 0.3, type: 'spring', bounce: 0.25, damping: 6,}}}>

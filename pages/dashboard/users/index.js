@@ -40,7 +40,7 @@ export default function Dashboard(props) {
                             <div className='center-main UsersPage'>
                                 <div className='Box'>
                                    <h1 className='text-2xl font-bold pb-2 mb-2'>List of Users</h1>
-                                   <div class="overflow-x-auto relative shadow-md sm:rounded-lg UserList">
+                                   <div className="overflow-x-auto relative shadow-md sm:rounded-lg UserList">
                                     <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                                             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                                 <tr>
