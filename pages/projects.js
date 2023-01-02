@@ -9,6 +9,7 @@ import { GiStoneBlock } from '@react-icons/all-files/gi/GiStoneBlock'
 import { TbBrandNextjs, TbBrandDocker } from 'react-icons/tb'
 import { MdGTranslate } from 'react-icons/md'
 import { GiServerRack } from 'react-icons/gi'
+import { BsQuestionCircle } from 'react-icons/bs'
 
 export default function Projects() {
   return (
@@ -28,7 +29,8 @@ export default function Projects() {
                     <h3 className="vertical-timeline-element-title">Website Developer</h3>
                     <h4 className="vertical-timeline-element-subtitle">Czechia</h4>
                     <p>
-                        At this time only HTML, CSS and basic JS<br/> After some time moved to ReactJS <br/>
+                        At this time only HTML, CSS and basic JS<br/> 
+                        After some time moved to ReactJS <br/>
                         And now NextJS, TailwindCSS and more.
                     </p>
                 </VerticalTimelineElement>
@@ -119,7 +121,7 @@ export default function Projects() {
                     <h3 className="vertical-timeline-element-title">Atropol</h3>
                     <h4 className="vertical-timeline-element-subtitle">MC, Hosting, Other</h4>
                     <p>
-                        Technik and Developer | Realy good company
+                        Technik and Developer | Really good company
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -202,7 +204,7 @@ export default function Projects() {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
-                    date="2022 - present"
+                    date="2022 - 2022"
                     iconStyle={{ background: '#39393A', color: '#7289DA' }}
                     icon={<SiJavascript />}
                 >
@@ -214,6 +216,21 @@ export default function Projects() {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     key='14'
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    date="2022 - present"
+                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    icon={<BsQuestionCircle />}
+                >
+                    <h3 className="vertical-timeline-element-title">Greenex Network</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Soon...</h4>
+                    <p>
+                        Founder, Technik
+                    </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    key='15'
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
