@@ -240,6 +240,21 @@ export default function Projects() {
                 >
                     <h3 className="vertical-timeline-element-title">Freelancer</h3>
                 </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    key='16'
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    date="2022 - present"
+                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    icon={<BsQuestionCircle />}
+                >
+                    <h3 className="vertical-timeline-element-title">OkurkaCraft S2</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Minecraft whitelist server!</h4>
+                    <p>
+                        Founder and Developer
+                    </p>
+                </VerticalTimelineElement>
                 </VerticalTimeline>
         </motion.div>
     </Layout>
