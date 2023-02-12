@@ -25,6 +25,7 @@ export default function Home() {
                             <motion.div className='Center' exit={{y: 100, opacity: 0, transition: {duration: 0.6}}} initial={{y: 180, opacity: 0}} animate={{y: 0, opacity: 1, transition: {duration: 0.6, delay: 0.9}}}>
                                 <h1 className='Name'>Pan_Okurka</h1>
                                 <h2 className='text'>I code in <Typing/></h2>
+                                <a href="https://www.buymeacoffee.com/panokurka" style={{marginTop: '4vh'}} target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style={{height: '60px !important',width: '217px !important', marginTop: '2vh', marginLeft: '3vh'}} /></a>
                                 <div className='customText'><h2><i>„Je dost těžké najít chybu v kódu, když ji hledáte; je to ještě těžší, když předpokládáte, že váš kód je bez chyb.“</i><br/><span className='podpis'>- Steve McConnell</span></h2></div>
                             </motion.div>
                             <motion.div className='Links' exit={{x: 250, opacity: 0, transition: {duration: 0.6}}} initial={{x: 310, opacity: 0}} animate={{x:0, opacity: 1, transition: {duration: 0.7, delay: 0.6}}}>
