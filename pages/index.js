@@ -21,7 +21,7 @@ export default function Home() {
                         <div className='ContentMove'>
                             <div className='Top'>
                                 <motion.div className='Avatar' exit={{x: -250, opacity: 0, transition: {duration: 0.6}}} initial={{x: -300, opacity: 0}} animate={{x: 0, opacity: 1, transition: {duration: 0.7, delay: 0.3, type: 'spring', bounce: 0.25, damping: 6,}}}>
-                                    <Image priority="1" src="/images/profile.gif" alt='profile' height='200px' width="200px" />
+                                    <Image priority="1" src="/images/profile.gif" className='Avatar' alt='profile' height='200px' width="200px" />
                                 </motion.div>
                                 <motion.div className='Links' exit={{x: 250, opacity: 0, transition: {duration: 0.6}}} initial={{x: 310, opacity: 0}} animate={{x:0, opacity: 1, transition: {duration: 0.7, delay: 0.6}}}>
                                     <a href='https://github.com/PanOkurka' className='socialiconlist'>
