@@ -328,10 +328,6 @@ img {
 
 @media screen and (max-width: 450px){
 
-  .CustomSideBar{
-    width: 4rem !important;
-  }
-
   .CustomTextSide{
     display: none !important;
   }
@@ -1467,6 +1463,12 @@ text-decoration: none;
 .BlogPage .Box .Drafts .Post .text{
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.Cuttext{
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
