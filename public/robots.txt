@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dev.baby-cucumber.com/
+
+# Sitemaps
+Sitemap: https://dev.baby-cucumber.com/sitemap.xml
