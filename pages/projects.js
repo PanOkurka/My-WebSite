@@ -121,7 +121,7 @@ export default function Projects() {
                     <h3 className="vertical-timeline-element-title">Atropol</h3>
                     <h4 className="vertical-timeline-element-subtitle">MC, Hosting, Other</h4>
                     <p>
-                        Technik and Developer | Really good company
+                        Technik and Developer
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -219,12 +219,12 @@ export default function Projects() {
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
                     contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
-                    date="2022 - present"
+                    date="2023 - present"
                     iconStyle={{ background: '#39393A', color: '#7289DA' }}
                     icon={<BsQuestionCircle />}
                 >
                     <h3 className="vertical-timeline-element-title">Greenex Network</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Soon...</h4>
+                    <h4 className="vertical-timeline-element-subtitle">Soon... | Currently paused.</h4>
                     <p>
                         Founder, Technik
                     </p>
@@ -253,6 +253,21 @@ export default function Projects() {
                     <h4 className="vertical-timeline-element-subtitle">Minecraft whitelist server!</h4>
                     <p>
                         Founder and Developer
+                    </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    key='17'
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    date="2023 - present"
+                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    icon={<TbBrandNextjs />}
+                >
+                    <h3 className="vertical-timeline-element-title">Atropol Hosting</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Game, VPS, Dedicated Server and more</h4>
+                    <p>
+                        Developer, Technik
                     </p>
                 </VerticalTimelineElement>
                 </VerticalTimeline>

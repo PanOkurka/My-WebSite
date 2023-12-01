@@ -34,7 +34,7 @@ export default function Blog(props) {
                                         Blog
                                     </h1>
                                     <Suspense>
-                                    <div className='Drafts gap-3'>
+                                    <div className='Drafts gap-3 mb-4'>
                                         {props.feed.map((post) => (
                                             <button key={post.id} onClick={() => Router.push("/blog/[id]", `/blog/${post.id}`)}>
                                                 <div className='Post'>
