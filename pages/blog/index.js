@@ -4,6 +4,7 @@ import ParticlesComponent from '../../components/paticlecomponent'
 import { motion } from 'framer-motion'
 import Router from 'next/router'
 import prisma from '../../lib/prismadb.ts'
+import { Suspense } from 'react'
 
 export const getServerSideProps = async() => {
 
@@ -32,8 +33,8 @@ export default function Blog(props) {
                                     <h1 className='text-white text-2xl mb-4 font-bold'>
                                         Blog
                                     </h1>
-
-                                    <div className='Drafts gap-3'>
+                                    <Suspense>
+                                    <div className='Drafts gap-3 mb-4'>
                                         {props.feed.map((post) => (
                                             <button key={post.id} onClick={() => Router.push("/blog/[id]", `/blog/${post.id}`)}>
                                                 <div className='Post'>
@@ -42,12 +43,13 @@ export default function Blog(props) {
                                                     <div className='infos'>
                                                         <img src={post.author.image} alt={post.author.name} />
                                                         <p className='ml-4'>{post.author.name}</p>
-                                                        <p className='ml-4'>{post.createdAt.toLocaleDateString()}</p>
+                                                        <p className='ml-4' suppressHydrationWarning>{post.createdAt.toLocaleDateString()}</p>
                                                     </div>
                                                 </div>
                                             </button>
                                         )).reverse()}
                                     </div>
+                                    </Suspense>
                                 </div>
                     </div>
         </motion.div>
