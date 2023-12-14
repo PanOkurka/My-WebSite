@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Router from 'next/router'
 import prisma from '../../lib/prismadb.ts'
 import { Suspense } from 'react'
+import {User} from '@nextui-org/react'
 
 export const getServerSideProps = async() => {
 
@@ -14,7 +15,7 @@ export const getServerSideProps = async() => {
         },
         include: {
             author: {
-                select: { name: true, image: true}
+                select: { name: true, image: true, role: true}
             }
         }
     })
@@ -41,8 +42,13 @@ export default function Blog(props) {
                                                     <h1 className='text-xl font-bold'>{post.title}</h1>
                                                     <div className='mt-4 text' dangerouslySetInnerHTML={{ __html: post.content }}></div>
                                                     <div className='infos'>
-                                                        <img src={post.author.image} alt={post.author.name} />
-                                                        <p className='ml-4'>{post.author.name}</p>
+                                                        <User 
+                                                            name={post.author.name}
+                                                            description={post.author.role}
+                                                            avatarProps={{
+                                                                src: post.author.image
+                                                              }}
+                                                        />
                                                         <p className='ml-4' suppressHydrationWarning>{post.createdAt.toLocaleDateString()}</p>
                                                     </div>
                                                 </div>

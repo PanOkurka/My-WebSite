@@ -6,7 +6,7 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background: #2C2F33;
+  background: #27272A !important;
   width: 100%;
   overflow-x: hidden;
 }
@@ -338,7 +338,7 @@ img {
 }
 
 .hoverNavItem:hover {
-  background: #2C2F33;
+  background: #27272A;
   text-decoration: none;
 }
 
@@ -387,9 +387,6 @@ img {
 }
 
 .center .bio-container h1{
-  margin-top: 60px;
-  padding-left: 220px;
-  text-align: center;
   font-family: consolas;
   color: #7289DA;
 }
@@ -404,8 +401,7 @@ img {
 
 .bio-container{
   width: 50%;
-  padding: 10px;
-  padding-bottom: 6vh;
+  padding: 20px;
   margin: 0;
   border: 5px solid;
   border-image-source: linear-gradient(140deg, rgba(114,137,218,1) 4%, rgba(170,134,13,0) 13%, rgba(227,199,29,0) 38%, rgba(255,222,86,0) 60%, rgba(209,179,57,0) 87%, rgba(114,137,218,1) 100%);
@@ -424,9 +420,6 @@ img {
 .bio-container h1 {
   font-family: consolas;
   font-size: 40px;
-  padding-bottom: 20px;
-  margin-left: -100%;
-  
 }
 
 .p {
@@ -980,7 +973,7 @@ text-decoration: none;
 }
 
 ::-webkit-scrollbar-track {
-  background: #2C2F33;
+  background: #27272A;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1058,7 +1051,7 @@ text-decoration: none;
 
 .Profile-Box{
   width: 50%;
-  background: #23272A;
+  background: #18181B;
   border-radius: 20px;
 }
 
@@ -1097,14 +1090,14 @@ text-decoration: none;
 .Profile-Box .Bottom p,
 .Profile-Box .Bottom select{
   width: 40%;
-  background: #2C2F33;
+  background: #27272A;
   padding: .5vh 0vh;
   color: #7289DA;
   border-radius: 15px;
 }
 
 .Profile-Box .Bottom .Btn{
-  background: #2C2F33 !important;
+  background: #27272A !important;
   transition: 400ms;
 }
 
@@ -1138,7 +1131,7 @@ text-decoration: none;
 .DashboardPage .Box{
   padding: 4vh 1vh;
   width: 100vh;
-  background: #23272A;
+  background: #18181B;
   color: white;
   border-radius: 10px;
 }
@@ -1171,7 +1164,7 @@ text-decoration: none;
 }
 
 .DashboardPage .Box .List .buttons > a{
-  background: #2C2F33;
+  background: #27272A;
   padding: 1vh 2.5vh;
   border-radius: 10px;
   text-decoration: none;
@@ -1210,7 +1203,7 @@ text-decoration: none;
 
 .CreatePost .Box{
   padding: 4vh 8vh;
-  background: #23272A;
+  background: #18181B;
   color: white;
   border-radius: 10px;
 }
@@ -1223,7 +1216,7 @@ text-decoration: none;
 
 .CreatePost .Box .btn{
   padding: 1vh 2vh;
-  background: #2C2F33;
+  background: #27272A;
   border-radius: 10px;
   transition: 400ms;
 }
@@ -1264,7 +1257,7 @@ text-decoration: none;
 
 .DraftsPage .Box{
   padding: 4vh 1vh;
-  background: #23272A;
+  background: #18181B;
   color: white;
   border-radius: 10px;
   width: 100vh;
@@ -1361,7 +1354,7 @@ text-decoration: none;
 
 .UsersPage .Box{
   padding: 4vh 1vh;
-  background: #23272A;
+  background: #18181B;
   color: white;
   border-radius: 10px;
   width: 100vh;
@@ -1416,7 +1409,7 @@ text-decoration: none;
 
 .BlogPage .Box{
   padding: 4vh 1vh;
-  background: #23272A;
+  background: #18181B;
   color: white;
   border-radius: 10px;
   width: 100vh;
@@ -1518,7 +1511,7 @@ text-decoration: none;
 
 .PostPage .Box{
   padding: 2vh 1vh;
-  background: #23272A;
+  background: #18181B;
   color: white;
   border-radius: 10px;
   width: 100vh;
@@ -1559,7 +1552,7 @@ text-decoration: none;
 }
 
 .PublishBtn{
-  background: #2C2F33 !important;
+  background: #27272A !important;
   transition: 400ms;
 }
 

@@ -8,6 +8,8 @@ import ParticlesComponent from '../../components/paticlecomponent'
 import prisma from '../../lib/prismadb.ts'
 import Router from 'next/router';
 import { Dialog, Transition } from '@headlessui/react'
+import { User, Skeleton } from '@nextui-org/react';
+import { Suspense } from 'react';
 
 export const getServerSideProps = async ({params}) => {
     const post = await prisma.post.findUnique({
@@ -17,7 +19,7 @@ export const getServerSideProps = async ({params}) => {
         include: {
             author: {
                 select: {
-                    name: true, email: true, image: true
+                    name: true, email: true, image: true, role: true
                 }
             }
         }
@@ -39,6 +41,12 @@ async function deletePost(id) {
         method: 'DELETE'
     })
     await Router.push('/dashboard/drafts');
+}
+
+export function Loading () {
+  return (
+    <Skeleton className='h-3 w-3/5 rounded-lg' />
+  )
 }
 
 export default function Post (props) {
@@ -70,9 +78,16 @@ export default function Post (props) {
                             <h1 className='text-2xl font-bold'>{props.title} {!props.published && `(Draft)`}</h1>
                             <div className='mt-4 text' dangerouslySetInnerHTML={{ __html: props.content }}></div>
                             <div className='infos'>
-                                <img src={props.author.image} alt={props.author.name} />
-                                <p className='ml-4'>{props.author.name}</p>
+                              <User 
+                                name={props.author.name}
+                                description={props.author.role}
+                                avatarProps={{
+                                  src: props.author.image
+                                }}
+                              />
+                              <Suspense fallback={<Loading />}>
                                 <p className='ml-4'>{props.createdAt.toLocaleDateString()}</p>
+                              </Suspense>
                             </div>
                             {userHasValidSession && postBelongsToUser && 
                             <div className='mt-4'>

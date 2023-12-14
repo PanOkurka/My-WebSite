@@ -1,10 +1,13 @@
+const {nextui} = require("@nextui-org/react");
+
 module.exports = {
   content: [
     './components/**/*.{html,js}',
     './pages/**/*.{html,js}',
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'class', // or 'media'
   theme: {
     screens: {
       sm: '640px',
@@ -949,5 +952,8 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  plugins: [nextui({
+    defaultTheme: "dark",
+    defaultExtendTheme: "dark"
+  })],
 }

@@ -20,10 +20,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='1'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2017 - present"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA', borderColor: "#00000" }}
                     icon={<FaHtml5 />}
                 >
                     <h3 className="vertical-timeline-element-title">Website Developer</h3>
@@ -37,10 +37,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='2'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2019 - 2020"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<SiJavascript />}
                 >
                     <h3 className="vertical-timeline-element-title">Baby-Cucumber v1.0</h3>
@@ -52,10 +52,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='3'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2019 - 2019"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<GiStoneBlock />}
                 >
                     <h3 className="vertical-timeline-element-title">AdvancedCraft</h3>
@@ -67,10 +67,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='4'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2019 - 2020"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<GiStoneBlock />}
                 >
                     <h3 className="vertical-timeline-element-title">DarkMines (VIPCraft)</h3>
@@ -82,10 +82,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='5'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2020 - present"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<SiJavascript />}
                 >
                     <h3 className="vertical-timeline-element-title">Baby-Cucumber v2.0</h3>
@@ -97,10 +97,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='6'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="late 2019 - early 2021"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<GiStoneBlock />}
                 >
                     <h3 className="vertical-timeline-element-title">OkurkaCraft</h3>
@@ -112,10 +112,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='7'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2019 - 2021"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<GiServerRack />}
                 >
                     <h3 className="vertical-timeline-element-title">Atropol</h3>
@@ -127,10 +127,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='8'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2021 - 2022"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<TbBrandDocker />}
                 >
                     <h3 className="vertical-timeline-element-title">Okurka Images</h3>
@@ -142,10 +142,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='9'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2021 - present"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<MdGTranslate />}
                 >
                     <h3 className="vertical-timeline-element-title">Plugin Translation</h3>
@@ -157,10 +157,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='10'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2021 - present"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<SiJavascript />}
                 >
                     <h3 className="vertical-timeline-element-title">Cucumber/Dragonex Radio</h3>
@@ -172,10 +172,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='11'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2021 - 2022"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<TbBrandNextjs />}
                 >
                     <h3 className="vertical-timeline-element-title">Dragonex Network</h3>
@@ -187,10 +187,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='12'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2022 - 2022"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<TbBrandNextjs />}
                 >
                     <h3 className="vertical-timeline-element-title">Ethernal</h3>
@@ -202,10 +202,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='13'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2022 - 2022"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<SiJavascript />}
                 >
                     <h3 className="vertical-timeline-element-title">Mejs.cz</h3>
@@ -217,10 +217,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='14'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2023 - present"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<BsQuestionCircle />}
                 >
                     <h3 className="vertical-timeline-element-title">Greenex Network</h3>
@@ -232,10 +232,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='15'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2022 - present"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<TbBrandNextjs />}
                 >
                     <h3 className="vertical-timeline-element-title">Freelancer</h3>
@@ -243,10 +243,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='16'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2022 - present"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<BsQuestionCircle />}
                 >
                     <h3 className="vertical-timeline-element-title">OkurkaCraft S2</h3>
@@ -258,10 +258,10 @@ export default function Projects() {
                 <VerticalTimelineElement
                     key='17'
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#39393A', color: '#7289DA', boxShadow: 'none' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #39393A' }}
+                    contentStyle={{ background: '#18181B', color: '#7289DA', boxShadow: 'none' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #18181B' }}
                     date="2023 - present"
-                    iconStyle={{ background: '#39393A', color: '#7289DA' }}
+                    iconStyle={{ background: '#18181B', color: '#7289DA' }}
                     icon={<TbBrandNextjs />}
                 >
                     <h3 className="vertical-timeline-element-title">Atropol Hosting</h3>
