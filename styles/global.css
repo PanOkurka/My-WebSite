@@ -29,6 +29,10 @@ img {
   display: block;
 }
 
+span > img {
+  opacity: 1 !important;
+}
+
 .logout-btn,
 .login-btn{
   margin-top: 20px;
