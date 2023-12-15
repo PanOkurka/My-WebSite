@@ -33,11 +33,9 @@ yarn-error.log*
 .env.production.local
 
 
-# ESOZ Page
-
-/pages/esoz-po.js
-/components/esoz-seznam.json
-/components/tpo-seznam.json
+# ingore sitemap
+/public/sitemap-0.xml
+/public/sitemap.xml
 
 /prisma/migrations
 /prisma/dev.db
